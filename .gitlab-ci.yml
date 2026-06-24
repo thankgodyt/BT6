@@ -1,0 +1,438 @@
+image: python:3.11-bookworm
+
+stages:
+  - setup
+  - split_scope
+  - question_generator
+  - question_generator_questions
+  - automation
+  - report
+  - validator
+  - scanner
+  - validator_report
+  - cleanup
+
+variables:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PYTHONUNBUFFERED: "1"
+  GIT_DEPTH: "0"
+  SELF_DISPATCH: "false"
+
+.default_job:
+  resource_group: hdn-file-queue
+  before_script:
+    - |
+      set -euo pipefail
+
+      apt-get update
+      apt-get install -y curl git gnupg wget unzip xvfb xclip
+
+      if ! command -v google-chrome >/dev/null 2>&1; then
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/google-linux-signing-keyring.gpg
+        echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-linux-signing-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+        apt-get update
+        apt-get install -y google-chrome-stable
+      fi
+
+      python -m pip install --upgrade pip
+      pip install selenium webdriver-manager
+      pip install -r requirements.txt || echo "No requirements.txt found, skipping"
+
+      git config --local user.email "gitlab-ci-bot@example.com"
+      git config --local user.name "GitLab CI Bot"
+
+      target_branch="${CI_COMMIT_BRANCH:-${CI_DEFAULT_BRANCH:-main}}"
+      export GITHUB_RUN_NUMBER="${GITHUB_RUN_NUMBER:-${CI_PIPELINE_IID:-0}}"
+
+      has_json() {
+        find "$1" -maxdepth 1 -name '*.json' 2>/dev/null | head -n 1 | grep -q .
+      }
+
+      has_md() {
+        find "$1" -maxdepth 1 -name '*.md' 2>/dev/null | head -n 1 | grep -q .
+      }
+
+      has_scanned_md() {
+        find scanned -mindepth 2 -name '*.md' 2>/dev/null | head -n 1 | grep -q .
+      }
+
+      persist_changes() {
+        message="$1"
+        git add -A
+
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          return 0
+        fi
+
+        git commit -m "$message"
+
+        if [ -n "${CI_PUSH_TOKEN:-}" ]; then
+          push_remote="https://oauth2:${CI_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+        else
+          push_remote="https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+        fi
+
+        n=0
+        until [ "$n" -ge 3 ]; do
+          git fetch "$push_remote" "$target_branch"
+          if git rebase FETCH_HEAD && git push "$push_remote" "HEAD:${target_branch}"; then
+            echo "Push succeeded"
+            return 0
+          fi
+
+          git rebase --abort 2>/dev/null || true
+          n=$((n + 1))
+          echo "Push failed, retrying in 5 seconds..."
+          sleep 5
+        done
+
+        echo "Failed to push after 3 attempts"
+        return 1
+      }
+
+      trigger_self() {
+        job_name="$1"
+
+        if [ "${SELF_DISPATCH:-false}" != "true" ]; then
+          echo "SELF_DISPATCH is false; not triggering ${job_name} again"
+          return 0
+        fi
+
+        if [ -z "${GITLAB_TRIGGER_TOKEN:-}" ]; then
+          echo "GITLAB_TRIGGER_TOKEN is not set; cannot trigger ${job_name} again"
+          return 0
+        fi
+
+        curl --fail --retry 5 --retry-delay 300 --request POST \
+          --form "token=${GITLAB_TRIGGER_TOKEN}" \
+          --form "ref=${target_branch}" \
+          --form "variables[RUN_JOB]=${job_name}" \
+          --form "variables[SELF_DISPATCH]=${SELF_DISPATCH}" \
+          "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/trigger/pipeline"
+      }
+
+.manual_or_trigger_setup: &manual_or_trigger_setup
+  rules:
+    - if: '$RUN_JOB == "setup"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_setup_index: &manual_or_trigger_setup_index
+  rules:
+    - if: '$RUN_JOB == "setup_index"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_1: &manual_or_trigger_1
+  rules:
+    - if: '$RUN_JOB == "1_split_scope"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_2: &manual_or_trigger_2
+  rules:
+    - if: '$RUN_JOB == "2_run_question_generator"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_3: &manual_or_trigger_3
+  rules:
+    - if: '$RUN_JOB == "3_run_question_generator_questions"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_4: &manual_or_trigger_4
+  rules:
+    - if: '$RUN_JOB == "4_run_automation"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_5: &manual_or_trigger_5
+  rules:
+    - if: '$RUN_JOB == "5_run_report"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_6: &manual_or_trigger_6
+  rules:
+    - if: '$RUN_JOB == "6_run_validator"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_7: &manual_or_trigger_7
+  rules:
+    - if: '$RUN_JOB == "7_run_scanner"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_8: &manual_or_trigger_8
+  rules:
+    - if: '$RUN_JOB == "8_run_validator_report"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+.manual_or_trigger_9: &manual_or_trigger_9
+  rules:
+    - if: '$RUN_JOB == "9_run_clean_up"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "web" || $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      allow_failure: true
+    - when: never
+
+setup:
+  extends: .default_job
+  stage: setup
+  <<: *manual_or_trigger_setup
+  script:
+    - |
+      python3 - <<'PY'
+      import base64
+      import json
+      import os
+      import sys
+      from pathlib import Path
+
+      raw_b64 = os.environ.get("KEY_JSON_B64", "")
+      if raw_b64.strip():
+          try:
+              raw = base64.b64decode(raw_b64.strip()).decode("utf-8")
+          except Exception as exc:
+              print(f"KEY_JSON_B64 is not valid base64 JSON: {exc}")
+              sys.exit(1)
+      else:
+          raw = os.environ.get("KEY_JSON", "")
+
+      if not raw.strip():
+          print("KEY_JSON_B64/KEY_JSON variable is empty")
+          sys.exit(1)
+
+      normalized = (
+          raw
+          .replace("\u201c", '"')
+          .replace("\u201d", '"')
+          .replace("\u2018", "'")
+          .replace("\u2019", "'")
+      )
+
+      try:
+          payload = json.loads(normalized)
+      except json.JSONDecodeError as exc:
+          print(f"KEY_JSON is not valid JSON: {exc}")
+          sys.exit(1)
+
+      if not isinstance(payload, dict) or not payload:
+          print("KEY_JSON must be a non-empty JSON object of username/token pairs.")
+          sys.exit(1)
+
+      Path("key.json").write_text(
+          json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+          encoding="utf-8",
+      )
+      print(f"key.json created with {len(payload)} account entries")
+      PY
+      python setup/setup.py
+      persist_changes "Setup"
+
+setup_index:
+  extends: .default_job
+  stage: setup
+  <<: *manual_or_trigger_setup_index
+  script:
+    - xvfb-run --auto-servernum python setup/index_deepwiki.py
+
+1_split_scope:
+  extends: .default_job
+  stage: split_scope
+  <<: *manual_or_trigger_1
+  script:
+    - |
+      python run_split_all_scope_questions.py
+      persist_changes "Auto-update: split scope"
+
+2_run_question_generator:
+  extends: .default_job
+  stage: question_generator
+  <<: *manual_or_trigger_2
+  script:
+    - |
+      if ! has_json scope; then
+        echo "No scope files found, skipping workflow"
+        exit 0
+      fi
+
+      python run_questions_generator_generate.py
+      persist_changes "Auto-update: question generator pending scope"
+
+      python run_questions_generator.py
+      persist_changes "Auto-update: generated scope questions"
+
+      if has_json scope; then
+        trigger_self "2_run_question_generator"
+      fi
+
+3_run_question_generator_questions:
+  extends: .default_job
+  stage: question_generator_questions
+  <<: *manual_or_trigger_3
+  script:
+    - |
+      if ! has_json scope_questions; then
+        echo "No scope question files found, skipping workflow"
+        exit 0
+      fi
+
+      python run_questions_generator_report_generate.py
+      persist_changes "Auto-update: scope question report pending files"
+
+      xvfb-run --auto-servernum python run_questions_generator_report.py
+      persist_changes "Auto-update: generated audit questions"
+
+      if has_json scope_questions; then
+        trigger_self "3_run_question_generator_questions"
+      fi
+
+4_run_automation:
+  extends: .default_job
+  stage: automation
+  <<: *manual_or_trigger_4
+  script:
+    - |
+      if ! has_json question; then
+        echo "No question files found, skipping workflow"
+        exit 0
+      fi
+
+      python run_generate_file.py
+      persist_changes "Auto-update: automation pending question"
+
+      python run_automation.py
+      persist_changes "Auto-update: automation URLs"
+
+      if has_json question; then
+        trigger_self "4_run_automation"
+      fi
+
+5_run_report:
+  extends: .default_job
+  stage: report
+  <<: *manual_or_trigger_5
+  script:
+    - |
+      if ! has_json automation; then
+        echo "No automation files found, skipping workflow"
+        exit 0
+      fi
+
+      python run_automation_report_generate.py
+      persist_changes "Auto-update: automation report pending files"
+
+      xvfb-run --auto-servernum python run_automation_report.py
+      persist_changes "Auto-update: audited reports"
+
+      if has_json automation; then
+        trigger_self "5_run_report"
+      fi
+
+6_run_validator:
+  extends: .default_job
+  stage: validator
+  <<: *manual_or_trigger_6
+  script:
+    - |
+      if ! has_md audited; then
+        echo "No audited files found, skipping workflow"
+        exit 0
+      fi
+
+      python run_generate_validated_questions_pending.py
+      persist_changes "Auto-update: validator pending files"
+
+      python run_validator.py
+      persist_changes "Auto-update: validated question URLs"
+
+      if has_md audited; then
+        trigger_self "6_run_validator"
+      fi
+
+7_run_scanner:
+  extends: .default_job
+  stage: scanner
+  <<: *manual_or_trigger_7
+  script:
+    - |
+      if ! has_scanned_md; then
+        echo "No scanned markdown files found, skipping workflow"
+        exit 0
+      fi
+
+      python run_generate_scanned_questions_pending.py
+      persist_changes "Auto-update: scanner pending files"
+
+      python run_scanner.py
+      persist_changes "Auto-update: scanned validation URLs"
+
+      if has_scanned_md; then
+        trigger_self "7_run_scanner"
+      fi
+
+8_run_validator_report:
+  extends: .default_job
+  stage: validator_report
+  <<: *manual_or_trigger_8
+  script:
+    - |
+      if ! has_json validated_questions; then
+        echo "No validated question files found, skipping workflow"
+        exit 0
+      fi
+
+      python run_validator_report_generate.py
+      persist_changes "Auto-update: validation report pending files"
+
+      xvfb-run --auto-servernum python run_validator_report.py
+      persist_changes "Auto-update: validated reports"
+
+      if has_json validated_questions; then
+        trigger_self "8_run_validator_report"
+      fi
+
+9_run_clean_up:
+  extends: .default_job
+  stage: cleanup
+  <<: *manual_or_trigger_9
+  script:
+    - |
+      python run_clean_up.py
+      persist_changes "Auto-update: clean up and reports"
