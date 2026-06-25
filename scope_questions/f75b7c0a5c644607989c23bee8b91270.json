@@ -1,0 +1,7 @@
+[
+  {
+    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_96373c08-5229-4596-b920-fe751ab5a63b?mode=deep",
+    "questions_generated": false
+  }
+]
