@@ -3,5 +3,10 @@
     "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
     "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_73187cf3-a6cb-4e10-8955-a1e7bf76721e?mode=deep",
     "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3948681a-1922-4eca-8190-42ea324b9005?mode=deep",
+    "questions_generated": false
   }
 ]
