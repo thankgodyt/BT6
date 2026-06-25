@@ -1,0 +1,7 @@
+[
+  {
+    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5fa93c93-fc0a-4593-810f-b289ab821b28?mode=deep",
+    "questions_generated": false
+  }
+]
