@@ -1,7 +1,0 @@
-[
-  {
-    "question": "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
-    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ea83a1cf-7b00-4fab-a175-9cf26229292c?mode=deep",
-    "questions_generated": false
-  }
-]
