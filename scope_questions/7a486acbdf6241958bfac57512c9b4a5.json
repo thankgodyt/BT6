@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: evm/src/common/Borsh.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4ff5de48-4316-4005-a523-3b9219623dea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/IBridgeToken.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_afd51b7c-6996-4ded-a4c1-52948bf61164?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/ICustomMinter.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e84d573d-4740-4204-9cc3-0a7fa6d689a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/ENearProxy.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dadb73be-abfd-49b0-8847-5a08898370d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/IENear.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b01077ef-a162-4cad-9045-d24007d4c3a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeToken.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a924ee1-17d9-4a1f-b062-005f6a7432f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeTypes.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c2d777b9-6cd9-43be-9f92-bcef27dcc972?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/HlBridgeToken.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_90e455ac-b7ca-4d6f-b902-c9c94dac9a6c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridge.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_718719ba-eaa9-48b1-bb7a-9faa2aa41a8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridgeWormhole.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7e690ed-ad23-40a7-a081-4806c6d20f6c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/SelectivePausableUpgradable.sol -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f1d87f94-31ad-4e45-a3b2-a4f5a576f48d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/btc.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0548fcdb-b5bf-4151-b8cc-d50b357ddb50?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/lib.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4d6cebcd-6360-4053-ad4d-9dcbf804dea8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/migrate.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_046a7633-aef7-4be2-b0f9-7757b5786546?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/storage.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4500bbc-2bb4-456b-84d1-5fb413d509aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/token_lock.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_815d1ba2-fcf1-4d0f-b724-2019df8d321a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/evm-prover/src/lib.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9372a4c8-0a0b-4d1d-80a6-4ce1fcbd31f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/mpc-omni-prover/src/lib.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_79b41a6e-5fd8-4532-8b7c-fad1d7a3212c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/byte_utils.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_01903713-8b28-4efa-a552-9dd3a85c0b37?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/lib.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6d8ab5f5-5f95-453a-95bd-88e2ae10777a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/parsed_vaa.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_31f2168b-571a-4e25-8298-2cde16b493b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/lib.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8c3348f0-b8c9-4cad-8b6a-8fd29531c45d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/migrate.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f00138bb-762e-4d89-a97f-af170510a87a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/omni_ft.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_19ebad91-a278-4503-b07d-806d15a8fea0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/bounded_string.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_976c46c7-0ce1-42c3-970f-308e23bf46dc?mode=deep",
+    "questions_generated": false
+  }
+]
