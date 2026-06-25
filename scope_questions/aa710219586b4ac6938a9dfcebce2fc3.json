@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/update_metadata.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_345644ec-19f3-40cb-89a4-9ee8e24f8ec2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/mod.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db14f965-3a9d-4b6e-ac60-9e406e2e8445?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/deploy_token.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25c6e710-3ca3-44e9-b7fe-8ad33b86e3d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/finalize_transfer.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2ce2b5c2-bf88-490c-a5a3-a915ab54e192?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/finalize_transfer_sol.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d51be268-783b-45de-a8eb-0c10dd39acd5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/get_version.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61fe2717-e7da-430e-b43e-b0929f58bfec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/init_transfer.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6bee938e-0686-465a-af32-5edf0410ce22?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/init_transfer_sol.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb7e5508-82f8-49df-872e-59b60f2d5a86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/log_metadata.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fa2b3ebf-eec3-445a-aa64-df408e16d402?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/user/mod.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f874213c-a757-41c6-bd0b-23d70e8493a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/wormhole_cpi.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_84b74ba6-7a21-44f9-bcf1-3bbeefc939c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/lib.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_075877b4-0a3e-4409-84ee-7dd01f0a73f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/config.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d0f418b0-1457-462b-a1a9-764b54d14adb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/deploy_token.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2fc26c0c-8ac8-463e-9033-056a60b6ff62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/finalize_transfer.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_05344dbe-5a65-41fc-9b98-72c820f1a83f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/init_transfer.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f636f994-9f20-4aee-a840-11b43ced38d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/log_metadata.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_014ea14c-dc97-4f99-890d-d4b1a5a0b478?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/message/mod.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_69748ed2-f7eb-41a5-91a8-068707841b03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/mod.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2d9d792d-ba9f-4db3-b297-1ce364c09f69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/state/used_nonces.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a019c88-04b1-4750-8256-8ed54f9a1eea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_token.cairo -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_42cc49e8-3ef8-4d9b-8878-af06308d619c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/bridge_types.cairo -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a66f07c9-d287-40f2-ba4a-26b6672942ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/lib.cairo -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1f0ddab-1c00-4b89-98e6-6486722aa695?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/omni_bridge.cairo -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb0193a3-6b37-49ec-b952-457e98bf0546?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: starknet/src/utils.cairo -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f10adee-49df-439b-a17b-bae386f0d675?mode=deep",
+    "questions_generated": false
+  }
+]
