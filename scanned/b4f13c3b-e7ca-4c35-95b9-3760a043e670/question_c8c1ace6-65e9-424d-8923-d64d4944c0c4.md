@@ -1,0 +1,1 @@
+[File: 'near/token-deployer/src/lib.rs -> Scope: Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure']

@@ -1,0 +1,1 @@
+[File: 'solana/programs/bridge_token_factory/src/constants.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'] [Function: CONFIG_SEED=b\
