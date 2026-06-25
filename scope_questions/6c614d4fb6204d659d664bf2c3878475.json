@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: evm/src/common/Borsh.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ada30a78-10de-497e-9d3d-3108a73a28db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/IBridgeToken.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1b3bd767-9c47-4e05-a9e9-3a2889974d2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/ICustomMinter.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a8a740e-78d8-4de1-a357-80ce8821599c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/ENearProxy.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_80225275-e278-41e7-852a-4b6219ee2ff7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/IENear.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_84d81176-f2e9-4ed0-a644-303d5188c4d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeToken.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a20ba2f-eec7-43ff-bf81-bcdd1f3baed3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeTypes.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6ccb9664-96bb-45e4-b250-03bdabd9956d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/HlBridgeToken.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6a111296-45fb-45d8-a002-5ab4e0ea4ef1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridge.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5fd078b8-b364-46ce-85c0-375e881a5943?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridgeWormhole.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fa9ee1ca-8319-49ff-8806-424562f28533?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/SelectivePausableUpgradable.sol -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_629fff53-bf7b-4927-9658-3bbd36c54849?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/btc.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_24f971e9-0380-4643-888b-0dad72e0c7b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/lib.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_08e8f5c2-61bf-427b-ac2e-12ad9bf10f52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/migrate.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aa153b52-166e-4683-855c-695f3e22d0e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/storage.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aa838ab9-f753-4d44-a101-6ca1eefcd252?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/token_lock.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_436db6e9-0217-4797-8f71-cd8d3c6e3c5e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/evm-prover/src/lib.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_72c768a7-8114-4309-9ffd-7be78b8bdba6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/mpc-omni-prover/src/lib.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3e1612c-8a48-4519-aa3e-07788367d922?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/byte_utils.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_951efbdf-be15-4ee7-b9b2-46a0bf4f307f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/lib.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1afb5d1b-4e35-43f9-bb61-710e7ce9315e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/parsed_vaa.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aaec9499-4188-481b-ba41-9d1fd72defe7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/lib.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cf3a77b1-0864-43d2-817a-24a601012f8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/migrate.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1293864f-5d1b-475c-be0e-f41b5bbcd597?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/omni_ft.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fd6a03c9-ede6-44b5-8726-35e9f8e52589?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/bounded_string.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3bf1a94-9f45-4b6f-8150-69ca69cc4dfc?mode=deep",
+    "questions_generated": false
+  }
+]
