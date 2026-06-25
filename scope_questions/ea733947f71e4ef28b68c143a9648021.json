@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: evm/src/common/Borsh.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e92b0bf7-255b-4539-b470-175f5f67f14f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/IBridgeToken.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_28d9f66a-64d7-4e44-a18c-daa918b9628e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/ICustomMinter.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1c663e27-2418-4d8f-bf56-902a64a713f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/ENearProxy.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f598783-f21b-41de-85d5-5340014df214?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/IENear.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5a90ef3-b6e1-4465-8419-bfa9c7b9bfe6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeToken.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_27f372f0-a571-4d5f-ba88-541c0438bdd5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeTypes.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d62e93ba-512f-449d-9908-43110c1bab0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/HlBridgeToken.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d54a9de0-5280-49c8-8a47-50cdc8ae9ea5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridge.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb07708c-5e78-45f7-bbb8-5d69661f0231?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridgeWormhole.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad86851a-3523-4d3a-8bfd-3e51ddc21715?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/SelectivePausableUpgradable.sol -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_32865ce0-1a0e-4bde-a851-0ce19763fe23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/btc.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_615d8fa7-1c20-4ca8-80c7-aafb4bb01bc8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/lib.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_807aa748-93c0-41f1-93f1-99b19f96a56c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/migrate.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cd1252ce-7cd0-41a6-a806-1d4c708abddd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/storage.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_325ac913-2eb5-445c-8a60-8e69bcf31d60?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/token_lock.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5d25ae63-9152-4feb-8ffd-b41b3106aca4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/evm-prover/src/lib.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_735269b6-9bda-438c-90d7-b09e26e3973a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/mpc-omni-prover/src/lib.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0848a847-a9d2-4c57-a6ee-17da7d29b632?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/byte_utils.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_784136f6-f9ef-4df3-b793-fd5666159468?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/lib.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5d29013a-01f8-4af6-b56d-db2347830cfd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/parsed_vaa.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fa7a956f-b6f7-456b-844e-056dbbb5a6ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/lib.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09d780da-2842-4545-829a-4de7deedd7c0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/migrate.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_26ee808f-2ea8-44f9-9f86-182466693b9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/omni_ft.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_73271a61-b472-4a93-889f-d3124a6c0a12?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/bounded_string.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0945dee3-f9de-4144-ae12-024d13591ccf?mode=deep",
+    "questions_generated": false
+  }
+]
