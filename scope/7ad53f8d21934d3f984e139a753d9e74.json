@@ -1,3 +1,0 @@
-[
-  "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'"
-]
