@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: evm/src/common/Borsh.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7cff247f-2f50-455d-9daa-991274dfed9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/IBridgeToken.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3290ef29-d4f7-4e9c-a62b-495e6474d55d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/common/ICustomMinter.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_310ba604-c58f-4f9a-94d4-d10ce8584f10?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/ENearProxy.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c744db55-3b82-4154-b192-8335c6ecc0b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/eNear/contracts/IENear.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a17aab62-980f-4858-9951-70367a343aa3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeToken.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4349d1b7-32d1-4801-b30a-7e26f5295a6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/BridgeTypes.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8fda797d-5ffb-4ef1-a971-90e00362722a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/HlBridgeToken.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_820795fd-d946-4ef2-91e7-9d84913857ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridge.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3da0fe90-885c-4fdf-97c7-a5a71d1c2b84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/OmniBridgeWormhole.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8186bf8f-63b8-4d07-af86-087841da52c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: evm/src/omni-bridge/contracts/SelectivePausableUpgradable.sol -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_26f4bd44-0597-4a49-8860-5da89941ce86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/btc.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_95f48a9a-c074-424f-b3c3-82c8e5a01f67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/lib.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_708132e2-c566-4066-84ba-20d752e7e817?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/migrate.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb47b0c2-f513-4a07-959e-b182ba603642?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/storage.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5efaffc9-e436-484c-a746-153a6e65c610?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-bridge/src/token_lock.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_234ce39a-3ad7-45aa-a5ba-008735f60dcd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/evm-prover/src/lib.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9fb9b91e-f013-42e6-85d6-145370a9e62e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/mpc-omni-prover/src/lib.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8448139c-e9a1-4e56-b1cb-e0634be71b7e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/byte_utils.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_42ff324a-fa38-4be8-b058-33597527f1c0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/lib.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db574891-9d53-4071-8373-62c8f1955e99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-prover/wormhole-omni-prover-proxy/src/parsed_vaa.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bb7e6f38-9839-4a45-8599-1e54c5d541aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/lib.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_356657ba-96c0-4e16-af53-6d2be023ba1f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/migrate.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_daa8a771-1c13-43fc-aec8-017124b9ffa5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-token/src/omni_ft.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a5d9ce2-f6b6-468b-9638-b87e6690fd54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/bounded_string.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_265590cf-53dd-40b2-991d-566ecc59e084?mode=deep",
+    "questions_generated": false
+  }
+]
