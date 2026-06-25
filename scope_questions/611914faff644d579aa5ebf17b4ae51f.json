@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: near/omni-types/src/btc.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2ed3ebc9-cae4-444f-a7c8-711a2a1b0140?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/errors.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49827f46-9a31-4a47-aab8-3afe0e9a9977?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/evm/events.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a62c4930-ed3b-458f-a302-0d6c52bf46c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/evm/header.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_330ffa61-8f47-4c05-b2c5-2a08a4b29b32?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/evm/mod.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d687fec5-2ac8-432c-a1d0-ea15dff2732b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/evm/receipt.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_155255a1-ab81-43bb-8e31-ff341e6e2fe2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/hex_types.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a5cd629-e8e2-4ba7-9a4a-8bd5a511826d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/lib.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9cf4e85b-5793-4ed6-a960-ee1bf80612b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/locker_args.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_95bd0a94-1838-4900-bff9-83833dba785a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/mpc_types.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e4089323-7a8b-414c-962c-6a68fe23522f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/near_events.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b370942d-aca9-4062-86f5-b6484bd50bd4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/prover_args.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85b87937-c84e-4873-beb3-022acdd36b7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/prover_result.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bd5ebb2a-8cb9-48ef-84f2-31127ef2b497?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/sol_address.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a904b2e2-1f7a-493d-8644-a0c4fb14c1c0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/starknet/events.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9579e6a0-51fc-4b4a-bdb4-a411dd78949d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/starknet/mod.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b820b054-9485-4a39-b23d-ff4dc034511f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/omni-types/src/utils.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c3933fcf-02ab-464e-a5c0-1b9af00ce098?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/token-deployer/src/lib.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad6a1256-5daa-4d24-b637-93c5482f18e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: near/token-deployer/src/migrate.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f0fa5762-764b-4637-809d-ed4c2312794b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/constants.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a2036217-0e79-4f1f-896f-8372b22312b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/error.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eef0760a-a629-484e-931c-b81efafd799d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/change_config.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_680c1bf7-f287-467b-95ec-3c0f28eccfc9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/initialize.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d384d170-14ad-4fe0-b71b-c90faff04f67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/mod.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dd5e1f3d-5107-45cc-8a92-36bcb4d9de88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: solana/programs/bridge_token_factory/src/instructions/admin/pause.rs -> Scope: Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9e8ecef2-ca01-4259-8fa2-ed39a33ab380?mode=deep",
+    "questions_generated": false
+  }
+]
