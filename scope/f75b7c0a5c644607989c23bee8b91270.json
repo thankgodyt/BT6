@@ -1,3 +1,0 @@
-[
-  "'File Name: starknet/src/utils/borsh.cairo -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'"
-]
