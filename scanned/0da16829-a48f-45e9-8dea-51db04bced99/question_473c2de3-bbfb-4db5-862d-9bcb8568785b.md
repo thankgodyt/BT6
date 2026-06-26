@@ -1,1 +1,0 @@
-[File: 'starknet/src/bridge_types.cairo -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds'] [Function: TransferMessagePayloadImpl::to_borsh / omni_bridge::fin_transfer] Can an attacker submit a TransferMessagePayload with message=Some(\
