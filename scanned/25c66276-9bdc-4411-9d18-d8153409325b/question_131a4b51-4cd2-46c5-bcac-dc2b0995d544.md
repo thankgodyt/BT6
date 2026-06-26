@@ -1,1 +1,0 @@
-[File: 'near/omni-token/src/migrate.rs -> Scope: Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances'] [Function: migrate_from_poa] Can an attacker exploit the fact that migrate_from_poa does not clear the STATE key (b\
