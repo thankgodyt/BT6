@@ -1,1 +1,0 @@
-[File: 'near/omni-token/src/migrate.rs -> Scope: Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending'] [Function: migrate_from_poa] Can an attacker craft a storage blob at STATE_KEY (b\
