@@ -1,0 +1,1 @@
+Let me look at the EVM OmniBridge contracts for the analog vulnerability pattern.
