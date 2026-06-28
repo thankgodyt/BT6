@@ -1,0 +1,1 @@
+Let me check the `finalize_transfer` entry point in `lib.rs` to see how `verify_signature` is called for the token version.
