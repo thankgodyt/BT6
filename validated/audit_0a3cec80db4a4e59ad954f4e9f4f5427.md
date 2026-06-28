@@ -1,0 +1,1 @@
+Let me trace the full attack path through the relevant code.
