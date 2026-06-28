@@ -1,0 +1,1 @@
+Let me look at the EVM contracts and the `process_fin_transfer_to_near` function more carefully.

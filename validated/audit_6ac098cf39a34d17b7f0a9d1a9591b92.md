@@ -1,0 +1,1 @@
+Let me look at the EVM contracts for fee/amount calculation issues.
