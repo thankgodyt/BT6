@@ -1,0 +1,1 @@
+Let me look at the EVM bridge contract and the `initTransfer` / `finTransfer` functions more carefully.
