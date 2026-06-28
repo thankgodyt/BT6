@@ -1,0 +1,3 @@
+Looking at the external report's vulnerability class — a downstream zero-amount check causing a revert that permanently blocks an operation — I need to find an analog in NEAR Omni Bridge where a similar pattern exists: an upstream function does not guard against a zero-amount condition that a downstream function will reject, causing permanent fund loss.
+
+Let me examine the `sign_transfer` and `init_transfer_internal` functions closely.
