@@ -1,0 +1,1 @@
+Let me look at the `update_transfer_fee` function and the `sign_transfer` flow more carefully to check for any mis-accounting.
