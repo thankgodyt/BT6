@@ -1,0 +1,1 @@
+Looking at the exact code path described in the question.
