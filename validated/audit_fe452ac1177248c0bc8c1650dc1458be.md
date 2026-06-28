@@ -1,0 +1,1 @@
+Let me look at the EVM contracts and the fee handling in more detail.
