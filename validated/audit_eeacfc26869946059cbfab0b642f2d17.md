@@ -1,0 +1,1 @@
+Let me look at the `FastTransfer::id()` method and related types to understand the key used in `fast_transfers`.
