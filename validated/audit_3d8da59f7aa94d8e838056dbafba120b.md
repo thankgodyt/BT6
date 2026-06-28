@@ -1,0 +1,1 @@
+Let me look at the EVM contracts and the `init_transfer_internal` locking behavior more carefully.
