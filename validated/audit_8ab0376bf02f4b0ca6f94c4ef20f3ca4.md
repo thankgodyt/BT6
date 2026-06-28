@@ -1,0 +1,1 @@
+Let me look at the callback that calls `process_fin_transfer_to_near` to understand the promise result indices.
