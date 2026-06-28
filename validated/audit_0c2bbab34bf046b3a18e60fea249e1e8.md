@@ -1,0 +1,1 @@
+Let me look at the `send_fee_internal` function and the `claim_fee_callback` locked token accounting more carefully.
