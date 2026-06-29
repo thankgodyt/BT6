@@ -1,1 +1,0 @@
-Let me trace through the actual code to verify this claim.
