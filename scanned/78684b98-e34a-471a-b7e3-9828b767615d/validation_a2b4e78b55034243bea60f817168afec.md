@@ -1,1 +1,0 @@
-Let me look at the EVM contract and the `send_fee_internal` function to complete my analysis.
