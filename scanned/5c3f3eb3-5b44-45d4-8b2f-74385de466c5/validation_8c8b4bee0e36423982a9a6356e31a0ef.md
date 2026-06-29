@@ -1,1 +1,0 @@
-Let me look at the `OmniToken::mint` implementation and the `is_refund_required` logic more carefully.
