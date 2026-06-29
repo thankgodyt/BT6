@@ -1,1 +1,0 @@
-Let me look at the `deploy_token_callback` and how NEAR tokens are registered in `token_decimals`.
