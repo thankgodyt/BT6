@@ -1,1 +1,0 @@
-Let me look at the full `process_fin_transfer_to_near` and `fin_transfer_send_tokens_callback` functions, and also the Solana program for similar patterns.
