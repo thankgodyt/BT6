@@ -1,1 +1,0 @@
-Let me read the full `upgrade_token` implementation in the Starknet bridge and the `fin_transfer` mint path more carefully.
