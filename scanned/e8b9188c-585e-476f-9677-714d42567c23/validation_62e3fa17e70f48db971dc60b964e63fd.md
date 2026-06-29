@@ -1,1 +1,0 @@
-Let me look at the `deploy_token_internal` function and how it initializes state for newly deployed tokens.
