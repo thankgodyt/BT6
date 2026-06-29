@@ -1,1 +1,0 @@
-Let me look at the Solana program for amount calculations and the `claim_fee_callback` more carefully.
