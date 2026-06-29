@@ -1,1 +1,0 @@
-Looking at the codebase, I need to find the analog to the error propagation pattern — specifically where errors are silently swallowed with a "default success" assumption, causing incorrect state transitions.
