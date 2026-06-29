@@ -1,1 +1,0 @@
-Let me look at the `init_transfer_internal` function and the `process_fin_transfer_to_other_chain` more carefully to understand the locked token accounting.
