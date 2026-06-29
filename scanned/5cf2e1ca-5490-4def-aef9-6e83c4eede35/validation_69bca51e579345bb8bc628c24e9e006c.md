@@ -1,1 +1,0 @@
-Let me search for the `FastTransfer` struct and its `id()` method in the omni-types crate.

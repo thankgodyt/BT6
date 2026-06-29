@@ -1,1 +1,0 @@
-Let me look at the EVM bridge's `finTransfer` and token handling more carefully.
