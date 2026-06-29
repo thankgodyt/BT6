@@ -1,1 +1,0 @@
-Let me look at the `sign_transfer` function and the NEAR bridge's `fin_transfer_callback` more carefully.
