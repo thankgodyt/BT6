@@ -1,0 +1,1 @@
+Looking at the vulnerability class — **escrow/token-supply mis-accounting** where a state variable tracking "claimed/redeemed" amounts is not updated through an alternative claim path — I need to find an analog in the NEAR Omni Bridge's `locked_tokens` accounting.
