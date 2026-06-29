@@ -1,1 +1,0 @@
-Let me look at the `init_transfer_internal` function and the `update_transfer_fee` interaction with locked tokens more carefully.
