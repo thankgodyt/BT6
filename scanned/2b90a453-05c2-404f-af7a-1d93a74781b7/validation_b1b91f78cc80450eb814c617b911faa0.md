@@ -1,1 +1,0 @@
-Looking at the NEAR Omni Bridge codebase, I need to find an analog to the M-09 vulnerability class: a **timelock/duration mismatch** where a user initiates a time-locked process with funds at stake, cannot cancel it, while an admin can change protocol parameters immediately with no corresponding timelock.

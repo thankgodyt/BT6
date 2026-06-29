@@ -1,1 +1,0 @@
-Let me look at the EVM event parsing for `DeployToken` and how `decimals`/`origin_decimals` are mapped.
