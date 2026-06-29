@@ -1,1 +1,0 @@
-I need to trace the fast-transfer lifecycle and the `claim_fee` authorization path carefully before concluding.
