@@ -1,0 +1,1 @@
+Let me look at the EVM `finTransfer` function and the fee handling there.
