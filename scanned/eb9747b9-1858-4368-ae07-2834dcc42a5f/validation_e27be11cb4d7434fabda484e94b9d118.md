@@ -1,1 +1,0 @@
-Let me look at the EVM contracts to understand the amount units in cross-chain messages.
