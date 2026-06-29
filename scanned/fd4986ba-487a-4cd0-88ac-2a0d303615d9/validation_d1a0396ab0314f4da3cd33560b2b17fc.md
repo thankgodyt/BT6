@@ -1,1 +1,0 @@
-Let me look at the `init_transfer_internal` function and the Solana/Starknet bridge components for any balance-based calculation issues.
