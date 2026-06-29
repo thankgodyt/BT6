@@ -1,1 +1,0 @@
-Let me look at the Solana program's `fin_transfer` and vault accounting, and also check the `sign_transfer_callback` on NEAR.
