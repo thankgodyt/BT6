@@ -1,1 +1,0 @@
-Let me look at the `FinTransferMessage` struct and how the prover populates it, to check for double-normalization issues.
