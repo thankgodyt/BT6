@@ -1,1 +1,0 @@
-Let me look at the EVM contracts more carefully for fee/amount mis-accounting patterns.
