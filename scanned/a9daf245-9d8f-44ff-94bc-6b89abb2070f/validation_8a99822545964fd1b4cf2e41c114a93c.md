@@ -1,1 +1,0 @@
-Looking at the NEAR Omni Bridge codebase for an analog to the same-chain peer vulnerability, I need to trace the transfer validation path across EVM and NEAR contracts.
