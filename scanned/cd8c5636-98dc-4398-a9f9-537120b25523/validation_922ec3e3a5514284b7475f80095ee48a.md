@@ -1,1 +1,0 @@
-Looking at the OmniBridge transfer lifecycle across both directions to find a valid analog to the "no cancellation/refund on source chain when destination finalization permanently fails" vulnerability class.
