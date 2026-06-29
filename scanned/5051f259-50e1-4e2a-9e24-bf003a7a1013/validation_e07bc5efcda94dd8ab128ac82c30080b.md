@@ -1,1 +1,0 @@
-Let me look at the EVM contract and the `claim_fee_callback` flow more carefully.
