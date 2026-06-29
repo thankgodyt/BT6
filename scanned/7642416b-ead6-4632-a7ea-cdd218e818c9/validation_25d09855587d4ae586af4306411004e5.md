@@ -1,1 +1,0 @@
-Let me look at the EVM contracts and the `fin_transfer_callback` flow more carefully.

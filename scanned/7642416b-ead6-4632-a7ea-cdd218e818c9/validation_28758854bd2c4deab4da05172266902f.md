@@ -1,1 +1,0 @@
-Let me look at the ERC-1155 deterministic address derivation and the `logMetadata1155` flow more carefully, as this is the most CREATE2-like pattern in the EVM contracts.
