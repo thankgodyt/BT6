@@ -1,1 +1,0 @@
-Let me look at the `FastTransfer` and `FastTransferId` types more carefully, as they could be the analog.
