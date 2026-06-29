@@ -1,1 +1,0 @@
-Looking at the vulnerability class — **balance manipulation via unchecked actual received amount** — I need to find where the NEAR Omni Bridge accepts a user-supplied amount, calls a token transfer, but uses the original amount (not the actual received amount) for downstream accounting.

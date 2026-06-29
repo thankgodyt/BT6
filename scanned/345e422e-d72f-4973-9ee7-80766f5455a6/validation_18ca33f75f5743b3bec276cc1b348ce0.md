@@ -1,1 +1,0 @@
-Let me look at the Solana program and the `send_fee_internal` function for any arithmetic issues.
