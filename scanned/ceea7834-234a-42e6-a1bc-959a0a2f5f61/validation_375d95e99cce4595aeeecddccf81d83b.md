@@ -1,1 +1,0 @@
-Let me look at the EVM event parsing and Solana init_transfer to understand amount handling.
