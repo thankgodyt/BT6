@@ -1,1 +1,0 @@
-Let me look at the `init_transfer_internal` and `ft_on_transfer` functions to understand the full locking flow.

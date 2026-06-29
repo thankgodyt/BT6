@@ -1,1 +1,0 @@
-Let me look at the Solana side for decimal normalization in fin_transfer and the prover result parsing.
