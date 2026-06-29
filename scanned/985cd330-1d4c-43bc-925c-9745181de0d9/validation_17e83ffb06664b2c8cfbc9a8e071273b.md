@@ -1,1 +1,0 @@
-Let me look at the Solana finalize transfer and the prover result types to check for decimal scale mismatches.
