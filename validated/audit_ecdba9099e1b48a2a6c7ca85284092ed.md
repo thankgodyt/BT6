@@ -1,0 +1,1 @@
+Let me look more carefully at the EVM contracts and the `sign_transfer` flow for multi-hop transfers.

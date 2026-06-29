@@ -1,0 +1,1 @@
+I need to systematically investigate the NEAR Omni Bridge for unsafe type-casting analogous to the external report's vulnerability class: truncating casts in encoding/decoding that silently corrupt amounts, fees, or recipients, enabling balance manipulation or fund theft.
