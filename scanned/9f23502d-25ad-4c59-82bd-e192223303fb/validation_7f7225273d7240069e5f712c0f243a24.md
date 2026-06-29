@@ -1,1 +1,0 @@
-Let me look at the `fast_fin_transfer_to_other_chain` function and the EVM contract to complete the analysis.

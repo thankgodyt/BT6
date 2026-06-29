@@ -1,1 +1,0 @@
-Let me look at the `send_tokens` function and the `process_fin_transfer_to_near` function more carefully.
