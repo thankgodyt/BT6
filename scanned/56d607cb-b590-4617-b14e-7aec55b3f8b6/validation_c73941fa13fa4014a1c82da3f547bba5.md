@@ -1,1 +1,0 @@
-Let me look at the EVM contracts for fee-related patterns and the `send_tokens` implementation.

@@ -1,1 +1,0 @@
-I need to look more carefully at the `init_transfer_internal` function and the native fee flow to check for balance mis-accounting.
