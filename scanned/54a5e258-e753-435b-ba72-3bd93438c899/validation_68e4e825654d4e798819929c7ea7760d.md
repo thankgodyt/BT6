@@ -1,1 +1,0 @@
-Let me examine the relevant code to trace this exploit path.
