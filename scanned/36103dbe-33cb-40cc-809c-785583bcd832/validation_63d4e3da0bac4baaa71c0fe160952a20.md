@@ -1,1 +1,0 @@
-Let me look at the `get_destination_chain` and `get_origin_chain` functions, and also the `process_fin_transfer_to_other_chain` function to understand the full flow.
