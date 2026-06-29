@@ -1,1 +1,0 @@
-Let me look more carefully at the NEAR bridge token's `mint` function and the `is_refund_required` logic, as well as the `check_storage_balance_result` flow.
