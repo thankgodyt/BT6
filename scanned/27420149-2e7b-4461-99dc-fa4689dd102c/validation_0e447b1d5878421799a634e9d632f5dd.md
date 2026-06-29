@@ -1,1 +1,0 @@
-Let me look at the fast transfer finalization logic more carefully.
