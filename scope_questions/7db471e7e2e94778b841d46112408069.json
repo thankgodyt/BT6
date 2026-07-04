@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node/Genesis.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d4eb0fdf-64e4-4ac8-b0bd-545df8b84a91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node/Recovery.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_23e6a49e-73a7-4b2e-9677-170f9dabda46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/NodeKernel.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_86fdf8e8-de7e-4306-8d49-3af58ff9e457?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20d1f936-7cde-4d40-a1ca-c8f8d2682668?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/Block.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15fb9959-2c18-4b60-bcd9-26591326ae39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/CanHardFork.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac3b0a71-4b4d-4e04-8bf4-42da67077574?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/Ledger.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2b713fab-da0c-4f84-b6c9-63fc2a738a9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/Node.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c32e5edb-983b-4686-8e37-951195f61afe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/QueryHF.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_453a5670-66df-4460-a2d5-f173b26d8ea1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Protocol.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87b98d52-b52d-4ee4-b9cc-e0bdaa0396d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_34cb80a9-7b51-42e6-aacb-b079536ba14e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger/HeaderValidation.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_47cf5f08-8820-4e45-86bf-aaabb6d56fe9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger/Mempool.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7c5604cc-4741-4d18-bf51-18c8b03fe378?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger/PBFT.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a214260e-e839-49dd-9f85-36a129081c2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Node.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cd2c00ee-2c1b-4473-80c7-161727e216e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Node/Serialisation.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_912db5a4-1601-4497-957a-23256649f838?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63cf3cb2-85f4-4ac3-b4c4-543891035e84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Block.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a637e78d-de45-45b1-b0be-cef94a8cabe4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Config.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7610540-de28-4047-81ba-118ea372e485?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Forge.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ca146e75-ac2e-4814-89d3-deec33eae816?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Mempool.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e424c62c-e031-4eef-a071-c9229a77b5f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Protocol.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5cf48cb-68bb-4a21-8af7-bd3cc6efc94f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/SupportsProtocol.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a56c62d-b079-4142-b68a-228d336d7bac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_458b88a3-0a4d-4c80-b45e-0e0904bb5c0a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/Common.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1fa2985-5701-450f-b4dd-896555baebd8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/Praos.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a530b9e2-81ca-4184-bfcb-1098ba7836d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/TPraos.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_11a48e3c-8f4e-4ee0-8b40-acab6d24765a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/Serialisation.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bfc1612-dfe1-47d6-bcc4-360dba45af80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Protocol/Praos.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1d4ea4e8-b0fa-4f02-a78f-bc3bc4f176b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Protocol/TPraos.hs -> Scope: High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63fd2abf-90e8-4839-9b2e-3a31b4f0ac0c?mode=deep",
+    "questions_generated": false
+  }
+]
