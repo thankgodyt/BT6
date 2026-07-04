@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/Snapshots.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce9703d5-25ae-4fa6-86d6-099dcf4ba1ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_38c2d06a-17f7-481e-9710-183709a8aa83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/Backend.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2561365a-a029-4d8d-b399-4740cb261871?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/Forker.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15397329-1579-475c-960e-2f6770ddc83c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/InMemory.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20982a99-5979-4ffd-9730-e06e483c50a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/LedgerSeq.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f4d4f3ef-4efd-4577-9e63-34f0b85646a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus-lsm/Ouroboros/Consensus/Storage/LedgerDB/V2/LSM.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d39f134d-7924-4ed2-b3d3-77d985c4c243?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/API.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_710bbf37-3a0e-4714-812f-a4b4df0f5ca6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2aabeaea-6f87-4db0-be61-7d45b2c607ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl/Index.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f83219a-5a35-41c1-8183-c0d50d52ac8b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl/Parser.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7d905ce-1bbd-4b57-9dbb-af1e13f359c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl/State.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bf6117de-e7b9-4a19-aeb5-0415d5056098?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/PerasCertDB/Impl.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bfd9051b-21de-4e11-a831-ca223c9f1ff2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/PerasVoteDB/Impl.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e4211200-7d12-4779-8474-d40473ff1400?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/BlockFetch/Server.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e2eae883-4f9a-4cc3-98f7-21017cd55259?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df4d7c51-c34e-4259-863b-bb3ca2f48b3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client/HistoricityCheck.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d435385e-501e-47ab-b226-aa6f98c78dc2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client/InFutureCheck.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56649598-c880-4540-9945-ebcdaee72e2f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client/Jumping.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b52f5aa1-6bac-4169-8eeb-0ab82a987e83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Server.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8443a9a7-ff01-4300-8d36-2f2fa7a37d8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/LocalStateQuery/Server.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a2b938fc-c7d8-4741-850d-a678bc3499c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/LocalTxSubmission/Server.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f15991e5-eb45-4c4f-826e-9eb52d07c526?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/Inbound.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_354790e5-1470-4944-89a1-9e92bac188c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/Outbound.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_73243466-36a8-4fd1-ae81-4bffbc397c27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/ObjectPool/PerasCert.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_99179ae5-610c-41e3-83dc-654dc1688d21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/ObjectPool/PerasVote.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d358f713-e0fa-487d-afb6-b0953861dcac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Network/NodeToNode.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1382ae83-1156-4c81-9dda-3161318e20e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Network/NodeToClient.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a10969e-d848-494c-ad8c-fef02df0269a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4e72d677-9901-4450-bb1f-00adf7069b8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node/GSM.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_384cd9dd-2441-4c4a-8da4-f3df564651b9?mode=deep",
+    "questions_generated": false
+  }
+]
