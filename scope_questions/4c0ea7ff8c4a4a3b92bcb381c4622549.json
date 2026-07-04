@@ -1,7 +1,0 @@
-[
-  {
-    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/ShelleyHFC.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
-    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_325f9357-9830-4a22-b394-12b873067b1e?mode=deep",
-    "questions_generated": false
-  }
-]
