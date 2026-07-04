@@ -1,7 +1,0 @@
-[
-  {
-    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/ShelleyHFC.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
-    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2262e9a7-3a3e-474e-84d7-e8f8edf9eb0d?mode=deep",
-    "questions_generated": false
-  }
-]
