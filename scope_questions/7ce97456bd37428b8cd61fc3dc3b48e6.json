@@ -1,0 +1,7 @@
+[
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/ShelleyHFC.hs -> Scope: Critical. Bypass of leader eligibility, VRF/KES/certificate/signature validation, PBFT/Praos/TPraos/Peras voting or certificate checks, or hot-key rules that enables unauthorized block, vote, or certificate acceptance'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_57fef710-8ba5-40ea-8b24-90ae3c5c9704?mode=deep",
+    "questions_generated": false
+  }
+]
