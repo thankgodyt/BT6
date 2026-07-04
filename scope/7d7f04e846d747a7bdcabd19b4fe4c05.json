@@ -1,0 +1,3 @@
+[
+  "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/ShelleyHFC.hs -> Scope: High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes'"
+]
