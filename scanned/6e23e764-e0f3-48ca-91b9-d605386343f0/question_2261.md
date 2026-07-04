@@ -1,0 +1,13 @@
+# Q2261: near valid protocol data reaching expensive paths in extractHeader
+
+## Question
+Can an unprivileged attacker reach extractHeader with near-valid protocol data reaching expensive paths and block/header fields, peer scheduling, rollback points, and node state observed through normal protocols, then starve a valid competing chain without prohibited flood-style DoS in production Ouroboros consensus behavior?
+
+## Target
+- File/function: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/Common.hs / extractHeader
+- Entrypoint: Remote peer or local public client reaches this production consensus path with protocol-valid or near-valid data through supported node interfaces.
+- Attacker controls: block/header fields, peer scheduling, rollback points, and node state observed through normal protocols.
+- Exploit idea: Drive `extractHeader` in `Ouroboros.Consensus.Storage.Common` through the production entrypoint using near-valid protocol data reaching expensive paths; verify whether the path can starve a valid competing chain without prohibited flood-style DoS before all consensus, ledger, storage, and era-specific guards have succeeded.
+- Invariant to test: Protocol-valid inputs must not trigger unbounded work before decisive rejection or acceptance.
+- Expected Cardano/Intersect impact: Potential High if adversarial but protocol-reachable data makes honest nodes prefer different chain state.
+- Fast validation: Write a property test that feeds equivalent fragments in different valid orders and compares selected tip, ledger hash, and consensus state.
