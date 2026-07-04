@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/EveryoneVotes.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_74694de4-57c2-42e0-8b07-237d58f3f48c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/WFA.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4090bcdf-513a-49c7-86b9-603a8685b6c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/WFALS.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c9091e66-ac8a-4e3a-8ab4-aabd4b192343?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Cert/Inclusion.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bea4c86a-c970-4629-969b-827533b1d78f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Cert/V1.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c299a9c1-362e-49ae-873f-d8a4a6a119bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Crypto/BLS.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5e5bff70-5591-4b82-875f-861077bb3be9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/SelectView.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b7922753-24c5-4fc9-ada4-63d0063664a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Vote/Aggregation.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b52587e-faa8-43bb-a595-88ef1cd66acb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Vote/V1.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_06b17c44-64d2-4fd6-a966-36b4f149fa14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Voting/Committee.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9a5ad42e-9e49-4d72-83a2-4156e70b67e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Voting/Rules.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_73de930a-1fad-4496-8258-1de3bcbcb2a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Voting/View.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ccf34e5b-c491-4edb-a05a-1ab5611fefd9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Weight.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93acda51-b34b-4776-8246-0b66cabdc9ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/API.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_be42fc8d-3bdc-4be5-a7ae-526e926cf5fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_79ebd7a8-41a1-49ea-934a-f15ef91f22e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Background.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_962d9d42-f1d3-45f8-a514-17d3d0cde8c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/BlockCache.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7cf17159-eac2-4c74-a6b0-6a5b0be069ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/ChainSel.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8fb5400e-ad0f-47f4-bdb4-5d23f9df3a9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Follower.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3b98779-7b57-47d0-bb31-9773684504a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Iterator.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f169579-c6c2-4aa5-b711-385fb2230434?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Query.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_807bec6b-31c1-4e78-b113-56f4f989e62f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Types.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da32ae4f-f19a-42bf-9e7a-92ea50fd2ef5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/API.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ac1fe31-a3c9-4866-9676-9182cee3f180?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b290b39e-de83-4ce9-928b-372b02b3f4d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/Index.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9232023c-067b-4ef1-8a80-74eb79fafb7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/Parser.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d1d63e9a-6ec4-4766-926d-79b39a34609d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/State.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1a98c9ed-4a11-4f1d-9aed-400dc61e667c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/Validation.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_888976de-e105-405f-a288-0b8a4568c34f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/API.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65417f38-a991-4a8e-91dd-875fce0602fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/Forker.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b7b851b-1551-40ce-b112-d0622f19ba6c?mode=deep",
+    "questions_generated": false
+  }
+]
