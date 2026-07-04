@@ -1,3 +1,0 @@
-[
-  "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/ShelleyHFC.hs -> Scope: Critical. Bypass of leader eligibility, VRF/KES/certificate/signature validation, PBFT/Praos/TPraos/Peras voting or certificate checks, or hot-key rules that enables unauthorized block, vote, or certificate acceptance'"
-]
