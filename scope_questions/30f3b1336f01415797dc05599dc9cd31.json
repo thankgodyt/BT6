@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/TPraos.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bddf30ee-e980-4e77-a573-3a261ed38861?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_54b25a3f-dd52-4e26-ae3d-0a89686f05ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/Header.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25f1a2ea-0cff-4302-94a5-8535e25fef56?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/VRF.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb6e07b8-d91a-4b2e-9e72-fb1508d82ae7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/Views.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_012192ed-e1d1-4bf4-aab3-247d439599d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/Common.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_04f2aee8-36a6-4d93-8b30-e80c744e62cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/AgentClient.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1c19a87-5f05-4740-bcbc-552cd752c844?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Ledger/HotKey.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0aee1a3e-eed6-4881-9627-d398fca4cb82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Ledger/Util.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b98911a-e6a4-4a27-b733-f202eabe7d55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HeaderValidation.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b5ba6653-c1df-4440-8d30-66b0d4c24abb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HeaderStateHistory.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_91cef02d-142b-4734-a0cd-50de77c34d43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Forecast.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7e703e1-d9bc-4f21-8732-f2818acae88b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/Abstract.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_980e9692-d1ae-4267-b1f8-62d023122437?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/Forging.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c8e8ecce-852b-43ac-9426-9e1c12734a9f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/SupportsProtocol.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce11c5b3-8629-4c68-8e8f-b9275e75b70b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/SupportsPeras.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1955b1ae-f898-4f6f-873c-15ddbfba0a5c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/Abstract.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f6d6a7ac-b22b-4f90-a3a8-56e0adcb0702?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/BFT.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_675d8ea2-04f9-49c4-a3d6-2624459314f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/PBFT.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_043d2580-2748-4cc6-ade3-3bef8d9cd518?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/PBFT/Crypto.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ecda0680-49e1-4966-8137-b039b6b69b95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/PBFT/State.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cf642b5a-14b3-4f44-894d-efbaff7d69cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/Signed.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_971d545f-61e7-4323-b027-b0f91c0df6ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/LeaderSchedule.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7700bcde-cd22-413d-b66f-1389dbb770cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/ModChainSel.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1282869f-bc75-4519-84d9-a96826ff2b13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Genesis/Governor.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_38798948-c822-4dc8-ae64-89da6490be8e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Abstract.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb94f25d-67f6-4237-ad81-0c9138f4c5f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Basics.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db8587dc-6a9b-4c11-a8fe-188ce25ee0c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Extended.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da997f85-c43a-42c2-8b0c-f9ebae368fe6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/SupportsMempool.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c488e77f-2665-472f-a30b-b9272fe08d6d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/SupportsProtocol.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8dfb0b44-9b86-44a0-b3ef-c85a60e53874?mode=deep",
+    "questions_generated": false
+  }
+]
