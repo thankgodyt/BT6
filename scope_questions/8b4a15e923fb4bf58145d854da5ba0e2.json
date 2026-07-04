@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/SupportsPeras.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_113df42e-7f50-4b4e-a9ea-db2339db8913?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Tables.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f30423d9-7711-49d0-83a0-4dbe440e86eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Tables/Basics.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f9830377-69d8-48b2-a63b-9cead893625b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Tables/Diff.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_37440aa7-26d5-494f-9719-647f39f0171f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/API.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff1a50e5-3255-4cd5-85fe-9408edcdb53d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/Impl/Common.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0fc8ec8a-379f-4e40-8e06-36b0e69c9483?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/Init.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0064b261-b765-44e1-b5bf-41908fbc720a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/TxSeq.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_669132d3-8aaf-433b-83d2-36a7ade63b6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/Update.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d93f31f3-644d-4e82-a8d0-83a3a3ce7a42?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Block.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8ae8cf5e-0265-4c13-b20d-4965219c4b33?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Ledger.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c209c1da-0125-482c-b90a-222ae7c73dd6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Mempool.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e6b6e8e3-c1bf-4929-94e9-a7f168a9facd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Node.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_622090ae-e13e-4312-8cc6-3e66f1ab1a09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Protocol.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_23adfc7f-05db-4f6a-b530-914d59fb74d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Protocol/ChainSel.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_275549bc-90e5-4a92-bb12-8bd6dfcd835d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Protocol/LedgerView.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_22ca707a-6ec0-4940-8d50-99246e714b50?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Serialisation/SerialiseDisk.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cf831fc7-1b06-4bc3-8114-2b5d6ccbfe2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Serialisation/SerialiseNodeToClient.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5875697b-09dd-4872-beaf-1b1a367695c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Serialisation/SerialiseNodeToNode.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_73d807be-2eec-4cfd-8250-979be6bc6d12?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/State.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d733d704-bc15-4af6-b222-0fade125a476?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/State/Infra.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d33c9dee-a18f-4ceb-ac33-a98fa8ad5d9f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/State/Types.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1c27d1b-26df-4ec1-880c-f902e97855ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Translation.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0e1f04da-ceae-4394-86bd-4badab7e64c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/History/EpochInfo.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_28c4d89a-51ad-4d71-9d7f-d1f13ad40186?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/History/Qry.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_437279fb-64c1-4aa6-bb5d-ac098838dda9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/History/Summary.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a50cb4c4-c115-47ea-a257-1c777e4a7512?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/AcrossEpochs.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9902d1d4-2185-4282-880e-37c28be41e9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/Class.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1de794c5-8e28-4356-8f5d-d2fb78e3ba90?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/Crypto.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d756df6a-3780-408d-b1bd-117fa8ded648?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/Crypto/BLS.hs -> Scope: Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49dd8b47-917e-4a77-9971-e59f905be42e?mode=deep",
+    "questions_generated": false
+  }
+]
