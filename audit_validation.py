@@ -275,7 +275,7 @@ def generate_validated_questions_for_ask():
     # Move up to 20 files
     for file_path in audited_files:
         try:
-            if counter >= 25:
+            if counter >= 30:
                 break
 
             # Create destination path

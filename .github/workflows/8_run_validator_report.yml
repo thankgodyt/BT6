@@ -83,10 +83,10 @@ jobs:
         if: steps.check_validated_questions.outputs.run_workflow == 'true'
         uses: nick-fields/retry@v3
         with:
-          max_attempts: 5
+          max_attempts: 2
           timeout_seconds: 60
           retry_on: 'error'
-          retry_wait_seconds: 300  # 5 minutes between retries
+          retry_wait_seconds: 1200  # 5 minutes between retries
           command: |
             #!/bin/bash
             set -e

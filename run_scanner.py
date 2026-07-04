@@ -87,6 +87,7 @@ def main():
         processed_count = 0
         skipped_count = 0
         counter = 0
+
         bot = Validator(teardown=True)
 
         for i, audit_file in enumerate(audit_files, 1):
@@ -101,7 +102,6 @@ def main():
                 with open(audit_file, 'r', encoding='utf-8') as f:
                     content = f.read()
 
-                # Initialize the validator and process the content
                 print(f"Processing content from {audit_file.name}...")
 
                 # Assuming bot.ask_question() is what processes the content
@@ -113,7 +113,7 @@ def main():
                 processed_count += 1
 
                 counter += 1
-                if counter >= 25:
+                if counter >= 30:
                     break
 
             except Exception as e:

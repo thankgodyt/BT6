@@ -1,14 +1,13 @@
 import json
 import os
 
-from decouple import config
 
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the path from https:///github.com/dfinity/ICRC-1
-SOURCE_REPO = "Near-One/omni-bridge"
+SOURCE_REPO = "IntersectMBO/ouroboros-consensus"
 # todo: the name of the repository
-REPO_NAME = "omni-bridge"
+REPO_NAME = "ouroboros-consensus"
 run_number = os.environ.get('GITHUB_RUN_NUMBER') or os.environ.get('CI_PIPELINE_IID', '0')
 
 
@@ -46,120 +45,196 @@ else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
 scope_files = [
-    'evm/src/common/Borsh.sol',
-    'evm/src/common/IBridgeToken.sol',
-    'evm/src/common/ICustomMinter.sol',
-    'evm/src/eNear/contracts/ENearProxy.sol',
-    'evm/src/eNear/contracts/IENear.sol',
-    'evm/src/omni-bridge/contracts/BridgeToken.sol',
-    'evm/src/omni-bridge/contracts/BridgeTypes.sol',
-    'evm/src/omni-bridge/contracts/HlBridgeToken.sol',
-    'evm/src/omni-bridge/contracts/OmniBridge.sol',
-    'evm/src/omni-bridge/contracts/OmniBridgeWormhole.sol',
-    'evm/src/omni-bridge/contracts/SelectivePausableUpgradable.sol',
-    'near/omni-bridge/src/btc.rs',
-    'near/omni-bridge/src/lib.rs',
-    'near/omni-bridge/src/migrate.rs',
-    'near/omni-bridge/src/storage.rs',
-    'near/omni-bridge/src/token_lock.rs',
-    'near/omni-prover/evm-prover/src/lib.rs',
-    'near/omni-prover/mpc-omni-prover/src/lib.rs',
-    'near/omni-prover/wormhole-omni-prover-proxy/src/byte_utils.rs',
-    'near/omni-prover/wormhole-omni-prover-proxy/src/lib.rs',
-    'near/omni-prover/wormhole-omni-prover-proxy/src/parsed_vaa.rs',
-    'near/omni-token/src/lib.rs',
-    'near/omni-token/src/migrate.rs',
-    'near/omni-token/src/omni_ft.rs',
-    'near/omni-types/src/bounded_string.rs',
-    'near/omni-types/src/btc.rs',
-    'near/omni-types/src/errors.rs',
-    'near/omni-types/src/evm/events.rs',
-    'near/omni-types/src/evm/header.rs',
-    'near/omni-types/src/evm/mod.rs',
-    'near/omni-types/src/evm/receipt.rs',
-    'near/omni-types/src/hex_types.rs',
-    'near/omni-types/src/lib.rs',
-    'near/omni-types/src/locker_args.rs',
-    'near/omni-types/src/mpc_types.rs',
-    'near/omni-types/src/near_events.rs',
-    'near/omni-types/src/prover_args.rs',
-    'near/omni-types/src/prover_result.rs',
-    'near/omni-types/src/sol_address.rs',
-    'near/omni-types/src/starknet/events.rs',
-    'near/omni-types/src/starknet/mod.rs',
-    'near/omni-types/src/utils.rs',
-    'near/token-deployer/src/lib.rs',
-    'near/token-deployer/src/migrate.rs',
-    'solana/programs/bridge_token_factory/src/constants.rs',
-    'solana/programs/bridge_token_factory/src/error.rs',
-    'solana/programs/bridge_token_factory/src/instructions/admin/change_config.rs',
-    'solana/programs/bridge_token_factory/src/instructions/admin/initialize.rs',
-    'solana/programs/bridge_token_factory/src/instructions/admin/mod.rs',
-    'solana/programs/bridge_token_factory/src/instructions/admin/pause.rs',
-    'solana/programs/bridge_token_factory/src/instructions/admin/update_metadata.rs',
-    'solana/programs/bridge_token_factory/src/instructions/mod.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/deploy_token.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/finalize_transfer.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/finalize_transfer_sol.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/get_version.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/init_transfer.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/init_transfer_sol.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/log_metadata.rs',
-    'solana/programs/bridge_token_factory/src/instructions/user/mod.rs',
-    'solana/programs/bridge_token_factory/src/instructions/wormhole_cpi.rs',
-    'solana/programs/bridge_token_factory/src/lib.rs',
-    'solana/programs/bridge_token_factory/src/state/config.rs',
-    'solana/programs/bridge_token_factory/src/state/message/deploy_token.rs',
-    'solana/programs/bridge_token_factory/src/state/message/finalize_transfer.rs',
-    'solana/programs/bridge_token_factory/src/state/message/init_transfer.rs',
-    'solana/programs/bridge_token_factory/src/state/message/log_metadata.rs',
-    'solana/programs/bridge_token_factory/src/state/message/mod.rs',
-    'solana/programs/bridge_token_factory/src/state/mod.rs',
-    'solana/programs/bridge_token_factory/src/state/used_nonces.rs',
-    'starknet/src/bridge_token.cairo',
-    'starknet/src/bridge_types.cairo',
-    'starknet/src/lib.cairo',
-    'starknet/src/omni_bridge.cairo',
-    'starknet/src/utils.cairo',
-    'starknet/src/utils/borsh.cairo',
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/TPraos.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/Header.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/VRF.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/Views.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/Common.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Praos/AgentClient.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Ledger/HotKey.hs",
+    "ouroboros-consensus-protocol/src/ouroboros-consensus-protocol/Ouroboros/Consensus/Protocol/Ledger/Util.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HeaderValidation.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HeaderStateHistory.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Forecast.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/Abstract.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/Forging.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/SupportsProtocol.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/SupportsPeras.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/Abstract.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/BFT.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/PBFT.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/PBFT/Crypto.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/PBFT/State.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/Signed.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/LeaderSchedule.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Protocol/ModChainSel.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Genesis/Governor.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Abstract.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Basics.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Extended.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/SupportsMempool.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/SupportsProtocol.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/SupportsPeras.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Tables.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Tables/Basics.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Ledger/Tables/Diff.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/API.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/Impl/Common.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/Init.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/TxSeq.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Mempool/Update.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Block.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Ledger.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Mempool.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Node.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Protocol.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Protocol/ChainSel.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Protocol/LedgerView.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Serialisation/SerialiseDisk.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Serialisation/SerialiseNodeToClient.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Serialisation/SerialiseNodeToNode.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/State.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/State/Infra.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/State/Types.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/Combinator/Translation.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/History/EpochInfo.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/History/Qry.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/HardFork/History/Summary.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/AcrossEpochs.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/Class.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/Crypto.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/Crypto/BLS.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/EveryoneVotes.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/WFA.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Committee/WFALS.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Cert/Inclusion.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Cert/V1.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Crypto/BLS.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/SelectView.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Vote/Aggregation.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Vote/V1.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Voting/Committee.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Voting/Rules.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Voting/View.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Peras/Weight.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/API.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Background.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/BlockCache.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/ChainSel.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Follower.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Iterator.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Query.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/Types.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/API.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/Index.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/Parser.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/State.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ImmutableDB/Impl/Validation.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/API.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/Forker.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/Snapshots.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/Backend.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/Forker.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/InMemory.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/LedgerDB/V2/LedgerSeq.hs",
+    "ouroboros-consensus/src/ouroboros-consensus-lsm/Ouroboros/Consensus/Storage/LedgerDB/V2/LSM.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/API.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl/Index.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl/Parser.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/VolatileDB/Impl/State.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/PerasCertDB/Impl.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/PerasVoteDB/Impl.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/BlockFetch/Server.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client/HistoricityCheck.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client/InFutureCheck.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Client/Jumping.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ChainSync/Server.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/LocalStateQuery/Server.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/LocalTxSubmission/Server.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/Inbound.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/Outbound.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/ObjectPool/PerasCert.hs",
+    "ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/ObjectPool/PerasVote.hs",
+    "ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Network/NodeToNode.hs",
+    "ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Network/NodeToClient.hs",
+    "ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node.hs",
+    "ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node/GSM.hs",
+    "ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node/Genesis.hs",
+    "ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/Node/Recovery.hs",
+    "ouroboros-consensus-diffusion/src/ouroboros-consensus-diffusion/Ouroboros/Consensus/NodeKernel.hs",
+    "ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano.hs",
+    "ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/Block.hs",
+    "ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/CanHardFork.hs",
+    "ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/Ledger.hs",
+    "ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/Node.hs",
+    "ouroboros-consensus-cardano/src/ouroboros-consensus-cardano/Ouroboros/Consensus/Cardano/QueryHF.hs",
+    "ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Protocol.hs",
+    "ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger.hs",
+    "ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger/HeaderValidation.hs",
+    "ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger/Mempool.hs",
+    "ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Ledger/PBFT.hs",
+    "ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Node.hs",
+    "ouroboros-consensus-cardano/src/byron/Ouroboros/Consensus/Byron/Node/Serialisation.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Block.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Config.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Forge.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Mempool.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/Protocol.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Ledger/SupportsProtocol.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/Common.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/Praos.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/TPraos.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Node/Serialisation.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Protocol/Praos.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/Protocol/TPraos.hs",
+    "ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/ShelleyHFC.hs",
 ]
 
 target_scopes = [
-    'Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows',
-    'Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions',
-    'Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances',
-    'Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending',
-    'Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure',
+    "Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain",
+    "Critical. Bypass of leader eligibility, VRF/KES/certificate/signature validation, PBFT/Praos/TPraos/Peras voting or certificate checks, or hot-key rules that enables unauthorized block, vote, or certificate acceptance",
+    "High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions",
+    "High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes",
+    "High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault",
+    "Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS",
 ]
 
 
 def question_generator(target_file: str) -> str:
     """
-    Generate exploit-focused audit and fuzzing questions for one NEAR Omni Bridge target.
+    Generate exploit-focused audit and fuzzing questions for one Ouroboros Consensus target.
 
     target_file format:
-    "'File Name: near/omni-bridge/src/lib.rs -> Scope: Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows'"
+    "'File Name: ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/ChainSel.hs -> Scope: High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions'"
     """
 
     prompt = f"""
     ```
 
-    Generate exploit-focused security audit and fuzzing questions for this exact NEAR Omni Bridge target:
+    Generate exploit-focused security audit and fuzzing questions for this exact Ouroboros Consensus target:
 
     {target_file}
 
-    Use live context from the project if available: NEAR omni-bridge, NEAR omni-token, token-deployer, omni-types, EVM prover, MPC omni prover, Wormhole omni prover proxy, EVM OmniBridge contracts, ENear proxy, Solana bridge token factory, Starknet omni bridge, Borsh/message encoders, cross-chain event parsing, proof verification, token deployment, token binding, init/finalize transfer flows, fees, nonces, relayer/staking gates, pause/admin roles, storage accounting, and migration paths.
+    Use live context from this repository if available: Praos, TPraos, PBFT, BFT, Peras votes/certificates, committee logic, header validation, VRF/KES/hot-key checks, chain selection, Genesis governor, ChainSync, BlockFetch, LocalTxSubmission, object diffusion, HardFork Combinator, ledger views, forecasts, era transitions, mempool, ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshots, LSM backend, Cardano/Byron/Shelley integration, serialization, and network-version negotiation.
 
     Protocol focus:
-    NEAR Omni Bridge is a multi-chain asset bridge. NEAR-to-foreign-chain outbound transfers use Chain Signatures/MPC signing. Foreign-chain-to-NEAR inbound transfers use light clients for Ethereum, Bitcoin, and Zcash, and Wormhole for Solana, BNB, EVM L2s, and other Wormhole-routed chains. The audit target is production smart contract and verifier/prover code in this repository only.
+    Ouroboros Consensus implements Cardano node consensus, storage, diffusion, and protocol integration. The audit target is production repository code covered by the Intersect POSM Bug Bounty and SECURITY.md. Exclude tests, docs, mocks, generators, benches, local tools, automation, unstable test libraries, and deployment-only configuration.
 
     Core invariants:
 
-    * User or protocol funds must never be stolen, lost, double-spent, permanently frozen, minted without backing, released without locking/burning, or finalized more than once.
-    * Only authorized users, relayers, managers, token contracts, provers, bridge contracts, and configured admins may execute privileged bridge, token, deployer, pause, upgrade, fee, or configuration actions.
-    * Escrow balances, bridged token supply, native token accounting, fee accounting, decimal normalization, storage deposits, callbacks/refunds, metadata bindings, and recipient amounts must remain consistent across all supported chains.
-    * Cross-chain messages, VAAs, light-client proofs, receipts, events, headers, signatures, emitters, chain IDs, token IDs, recipient formats, nonces, and domains must not be forgeable, replayable, malleable, duplicated, or accepted for the wrong chain or asset.
-    * MPC, threshold-signature, signer, prover, and verification logic must never expose sensitive state or accept signatures/proofs that do not meet the required authorization and threshold assumptions.
+    * Invalid blocks, headers, ledger states, votes, certificates, or transactions must never be accepted as valid.
+    * Honest nodes must not be driven by unprivileged peers into a divergent, non-canonical, or rollback-invalid chain outside protocol security assumptions.
+    * VRF, KES, hot-key, PBFT/Praos/TPraos, Peras, committee, and ledger-view checks must preserve authorization and threshold assumptions.
+    * Hard-fork era boundaries, forecasts, network versions, serialization formats, and ledger translations must not let data from one era/protocol be accepted under another.
+    * ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshots, and LSM state must remain consistent across validation, rollback, replay, restart, and recovery.
 
     Rules:
 
@@ -167,28 +242,26 @@ def question_generator(target_file: str) -> str:
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Attacker may be an unprivileged bridge user, token holder, malicious recipient, relayer applicant, custom relayer, caller of public smart-contract methods, contract deployer through supported factory paths, or creator of cross-chain messages/events/proofs accepted by the bridge.
-    * Do not rely on admin/operator compromise; leaked private keys; malicious maintainer; social engineering; physical or TEE hardware attacks; Wormhole guardian compromise; NEAR validator collusion, chain reorgs, or finality failures; control of >= threshold colluding MPC nodes; unsupported local configuration; public-mainnet testing; front-running-only attacks; spam; or brute-force DDoS.
-    * Exclude denial of service, network-level outages, unbounded gas/storage consumption, griefing with no profit motive, dependency-only issues, static-analysis-only findings, gas optimizations, code style, best-practice findings, already-known audit findings, in-memory secret zeroization, RNG quality, mock attestation acceptance during the grace period, deployment/operational issues, and planned designs without code.
-    * Exclude test-only code paths, mocks, examples, docs, configs, generated files, local scripts, repo automation, and non-default feature-only paths such as dev-utils, test-utils, benchmark, or network-hardship-simulation features.
+    * Attacker may be an unprivileged peer, block/header sender, ChainSync/BlockFetch/NodeToNode participant, LocalTxSubmission or LocalStateQuery client, object-diffusion sender, crafted DB/snapshot input provider in a local reproduction, or creator of protocol messages accepted by the node.
+    * Do not rely on admin/operator compromise, leaked keys, malicious maintainers, social engineering, physical attacks, compromised Cardano ledger rules, external dependency bugs alone, stake majority, VRF/KES key compromise, trusted genesis/config changes, public-mainnet testing, spam, or brute-force DoS.
+    * Exclude denial of service, network outages, resource exhaustion, performance-only bugs, logging/metrics issues, code style, best-practice findings, test-only paths, docs, configs, generated files, scripts, local tooling, benchmarks, mocks, and unstable test libraries.
     * Generate 10 to 20 high-signal questions.
-    * At least 70% must be multi-step flow, invariant, authorization, accounting, proof-verification, cross-chain replay, message-domain, token-binding, nonce, finalization, migration, or cross-module questions.
-    * Every question must be testable by a runnable localnet/testnet-safe PoC, contract unit test, fuzz test, invariant test, model test, differential test, or private-testnet transaction sequence.
-    * Avoid generic checklist questions and repeated root causes; prefer boundary mutations such as wrong emitter, wrong chain ID, duplicate event, failed callback, reordered finalization, malformed recipient, reused nonce, mismatched decimals, or partial state update.
+    * At least 70% must be multi-step flow, invariant, authorization, consensus-safety, chain-selection, hard-fork, storage-replay, serialization, rollback, or cross-module questions.
+    * Every question must be testable by a runnable unit test, state-machine test, property/fuzz test, io-sim scenario, model/differential test, local node cluster, or private-testnet sequence.
+    * Avoid generic checklist questions and repeated root causes; prefer boundary mutations such as wrong era, stale ledger view, forged header field, duplicate vote, rollback/replay edge, restart boundary, corrupted snapshot, mismatched network version, invalid certificate, or malformed serialized block.
     * Each question must target a plausible issue class for the exact file and scope.
 
     High-value attack surfaces:
 
-    * NEAR bridge flows: `ft_transfer_call`, `storage_deposit`, `init_transfer`, `fin_transfer`, `bind_token`, `deploy_token`, BTC/Zcash handling, fee/native-fee handling, relayer staking, trusted relayer gates, pause/admin gates, migrations, refunds, and storage-accounting state.
-    * NEAR token/deployer flows: bridged token mint/burn/transfer behavior, metadata binding, deployer authorization, account registration, promise callback failure, refund paths, and migration compatibility.
-    * Prover and verifier flows: EVM receipt/header/event parsing, Wormhole VAA parsing and proxying, Bitcoin/Zcash proof data, Borsh encoders, emitter/chain/domain separation, finality assumptions, result decoding, and proof freshness.
-    * EVM bridge flows: `initTransfer`, `finTransfer`, `deployToken`, `logMetadata`, custom minter behavior, ERC20/1155 handling, ENear proxy behavior, selective pausing, bridge token implementation, fee accounting, signatures, and nonce replay protection.
-    * Solana and Starknet flows: bridge token factory initialization/configuration, PDA/account ownership checks, Wormhole CPI, SPL/SOL init/finalize transfer, used nonce state, message serialization, Cairo bridge/token state updates, and recipient/token identifier validation.
-    * Cross-chain consistency: source/destination chain identifiers, token IDs, metadata hashes, decimals, amount normalization, recipient formats, event topics/selectors, message hashes, replay domains, and one-time finalization state.
+    * Protocol validation: header body hashes, slot checks, VRF leader eligibility, KES periods, operational certificates, overlay schedules, PBFT delegation state, Praos/TPraos chain order, Peras votes/certs, committee weights, and ledger views.
+    * Chain selection and diffusion: candidate selection, headers before blocks, ChainSync rollback, BlockFetch validation, Genesis density checks, historicity/future checks, peer-triggered state transitions, and object-diffusion acceptance.
+    * Hard forks: era boundary translation, forecast windows, network-version gates, node-to-node/node-to-client serialization, query dispatch, and cross-era ledger/protocol state.
+    * Storage and restart: ChainDB validation, VolatileDB indexes, ImmutableDB chunk/index parsing, LedgerDB snapshots, rollback/replay after restart, LSM/in-memory backend consistency, and database recovery.
+    * Mempool and local APIs: transaction validation against ledger state, mempool revalidation, local submission/query authorization boundaries, and transaction sequence invariants.
 
     Impact mapping:
 
-    * Critical only: theft/loss/freezing/double-spending of funds; unauthorized transaction or privileged action; bridge balance, escrow, fee, or token-supply manipulation; cross-chain replay or verification bypass enabling invalid finalization; cryptographic/MPC/signature bypass or sensitive MPC state disclosure.
+    * Valid impacts are only the provided Critical, High, or Medium scoped impact. Do not downgrade or expand the scope.
 
     Each question must include:
 
@@ -211,7 +284,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(question: str) -> str:
     """
-    Generate a focused NEAR Omni Bridge exploit-question validation prompt.
+    Generate a focused Ouroboros Consensus exploit-question validation prompt.
     """
     return f"""# QUESTION SCAN PROMPT
 
@@ -219,40 +292,40 @@ def audit_format(question: str) -> str:
 {question}
 
 ## Scope Rules
-- Audit only production NEAR Omni Bridge smart-contract, verifier, prover, and message/type code listed in `scope_files`.
+- Audit only production Ouroboros Consensus code listed in `scope_files`.
 - Do not ask for repo contents or claim files are missing.
-- Ignore tests, docs, mocks, generated files, repo automation scripts, configs, build files, IDE files, package metadata, local deployment choices, examples, and local tooling.
-- Respect SECURITY.md and the HackenProof program rules. Do not perform public-mainnet testing; prefer local tests or private testnets.
+- Ignore tests, docs, mocks, generators, benchmarks, generated files, repo automation scripts, configs, build files, IDE files, examples, local tools, and unstable test libraries.
+- Respect SECURITY.md and the Intersect POSM Bug Bounty rules. Do not perform public-mainnet testing; prefer local tests, io-sim, model tests, or private testnets.
 
 ## Objective
-Decide whether the question leads to a real, reachable NEAR Omni Bridge vulnerability.
-The attacker must enter through a supported production path: public smart-contract call, token transfer callback, cross-chain transfer initiation/finalization, metadata logging, token deployment/binding, relayer flow, prover/verifier input, accepted cross-chain message/event/proof, or a supported local/private-testnet reproduction of those paths.
+Decide whether the question leads to a real, reachable Ouroboros Consensus vulnerability.
+The attacker must enter through a supported production path: NodeToNode/NodeToClient protocol message, ChainSync, BlockFetch, LocalTxSubmission, LocalStateQuery, object diffusion, block/header validation, mempool validation, database replay/recovery, snapshot loading, hard-fork transition, or a supported local/private-testnet reproduction of those paths.
 The impact must match the provided target scope.
-Prefer #NoVulnerability unless the path is concrete, locally testable on unmodified code, and proves one of the Critical impacts in `target_scopes`.
+Prefer #NoVulnerability unless the path is concrete, locally testable on unmodified code, and proves one impact in `target_scopes`.
 
 ## Method
 1. Trace the attacker-controlled entrypoint.
-2. Map it to exact production files/functions across NEAR, EVM, Solana, Starknet, or prover/type modules.
-3. Check relevant guards: predecessor/signer checks, role checks, pause gates, token/account ownership, storage deposits, callbacks/refunds, nonce/used-message state, amount/fee/decimal accounting, metadata binding, token ID parsing, signature/proof verification, emitter/chain/domain separation, finality checks, and replay/idempotence protection.
+2. Map it to exact production files/functions across protocol, diffusion, hard-fork, ledger, mempool, storage, Peras/committee, or Cardano integration modules.
+3. Check relevant guards: header validation, ledger validation, VRF/KES/hot-key checks, certificate/vote verification, chain selection, rollback limits, forecast windows, era/network-version checks, serialization tags, DB indexes, snapshot integrity, and replay/recovery logic.
 4. Decide whether the questioned invariant can actually break under intended deployment.
 5. Prove root cause with file/function/line references.
 6. Confirm realistic likelihood and exact scoped impact.
 7. Reject if current validation already prevents the exploit.
 
 ## Reject Immediately
-- Requires admin/operator compromise, leaked private keys, malicious maintainer, social engineering, physical or TEE hardware attacks, Wormhole guardian compromise, NEAR validator collusion/reorg/finality failure, >= threshold colluding MPC nodes, unsupported local configuration, public-mainnet testing, front-running only, spam, or brute-force DDoS.
-- Only affects tests, docs, configs, scripts, mocks, generated code, local tooling, deployment choices, or non-default feature-only paths.
-- External dependency behavior is the only cause.
-- Impact is denial of service, unbounded gas/storage consumption, network outage, performance degradation, griefing without profit motive, logging/observability, local misconfiguration, harmless rejection, stale read with no fund/security impact, in-memory secret zeroization, RNG quality, or theoretical risk.
+- Requires admin/operator compromise, leaked keys, malicious maintainer, social engineering, physical attack, trusted config/genesis manipulation, stake majority, VRF/KES key compromise, external dependency bug alone, public-mainnet testing, spam, or brute-force DoS.
+- Only affects tests, docs, configs, scripts, mocks, generators, benches, generated code, local tooling, deployment choices, or unstable test libraries.
+- Impact is denial of service, network outage, resource exhaustion, performance degradation, logging/observability, harmless rejection, stale read with no security impact, or non-security correctness.
 - No concrete scoped impact or no realistic exploit path.
 
 ## Allowed Impact Scope
 Only these impacts are valid:
-- Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows.
-- Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions.
-- Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances.
-- Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending.
-- Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure.
+- Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain.
+- Critical. Bypass of leader eligibility, VRF/KES/certificate/signature validation, PBFT/Praos/TPraos/Peras voting or certificate checks, or hot-key rules that enables unauthorized block, vote, or certificate acceptance.
+- High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions.
+- High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes.
+- High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault.
+- Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS.
 
 ## Output
 If valid:
@@ -274,7 +347,7 @@ If invalid, output exactly:
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for NEAR Omni Bridge.
+    Generate a short cross-project analog scan prompt for Ouroboros Consensus.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -282,19 +355,19 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Access Rules (Strict)
-- Treat production NEAR Omni Bridge files in the provided scope as accessible context.
+- Treat production Ouroboros Consensus files in the provided scope as accessible context.
 - Do not claim missing/inaccessible files.
 - Do not ask for repository contents.
-- Do not scan tests, docs, build files, IDE files, configs, generated files, resources, package metadata, repo automation scripts, local tooling, deployment-only choices, or non-default feature-only paths as audited targets.
+- Do not scan tests, docs, build files, IDE files, configs, generated files, resources, repo automation scripts, local tooling, benchmarks, mocks, or unstable test libraries as audited targets.
 
 ## Objective
-Use the external report's vulnerability class as a hint to find valid issues based on NEAR Omni Bridge security impact.
-Focus on externally reachable issues triggered by an unprivileged bridge user, token holder, malicious recipient, relayer applicant, custom relayer, public smart-contract caller, contract deployer through supported factory paths, or creator of cross-chain messages/events/proofs accepted by the bridge.
+Use the external report's vulnerability class as a hint to find valid issues based on Ouroboros Consensus security impact.
+Focus on externally reachable issues triggered by an unprivileged peer/client, crafted block/header/transaction/object, protocol message, DB/snapshot input in a local reproduction, or private-testnet sequence.
 Only report an analog if this repository has its own reachable root cause and the impact matches the provided target scope.
 
 ## Method
-1. Classify vuln type: unauthorized transaction, role/auth bypass, pause bypass, balance manipulation, escrow/token-supply mis-accounting, callback/refund inconsistency, fee/decimal normalization abuse, token metadata binding confusion, nonce/replay bug, cross-chain message forgery, event/proof parsing flaw, light-client/Wormhole verification bypass, signature/MPC threshold bypass, or sensitive MPC state disclosure.
-2. Map to NEAR Omni Bridge components and exact production files.
+1. Classify vuln type: invalid block/header acceptance, validation bypass, chain-selection error, rollback/replay bug, hard-fork era confusion, serialization mismatch, ledger-view/forecast bug, DB/snapshot corruption, certificate/vote verification bypass, or sensitive consensus-state exposure.
+2. Map to Ouroboros Consensus components and exact production files.
 3. Prove root cause with exact file/function/module/line references.
 4. Confirm concrete scoped impact and realistic likelihood.
 5. Explain the attacker-controlled entry path and why this code is a necessary vulnerable step.
@@ -302,21 +375,20 @@ Only report an analog if this repository has its own reachable root cause and th
 
 ## Disqualify Immediately
 - No reachable attacker-controlled entry path.
-- Requires admin/operator compromise, leaked private keys, malicious maintainer, social engineering, physical or TEE hardware attacks, Wormhole guardian compromise, NEAR validator collusion/reorg/finality failure, >= threshold colluding MPC nodes, unsupported local configuration, public-mainnet testing, front-running only, spam, or brute-force DDoS.
-- External dependency behavior is the only cause.
-- Test/docs/config/build/generated/local-tooling/deployment-only/non-default-feature issue.
-- Theoretical-only issue with no protocol impact.
-- Impact is denial of service, unbounded gas/storage consumption, network outage, performance degradation, griefing without profit motive, local misconfiguration, observability noise, logging noise, harmless rejection, stale read with no security impact, or non-security correctness.
+- Requires admin/operator compromise, leaked keys, malicious maintainer, social engineering, physical attack, trusted config/genesis manipulation, stake majority, VRF/KES key compromise, external dependency bug alone, public-mainnet testing, spam, or brute-force DoS.
+- Test/docs/config/build/generated/local-tooling/benchmark/mock/unstable-testlib issue.
+- Theoretical-only issue with no consensus/security impact.
+- Impact is denial of service, network outage, resource exhaustion, performance degradation, logging/observability, harmless rejection, stale read with no security impact, or non-security correctness.
 - Impact or likelihood missing.
 
 ## Allowed Impact Scope
 Only these impacts are valid:
-- Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows.
-- Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions.
-- Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances.
-- Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending.
-- Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure.
-
+- Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain.
+- Critical. Bypass of leader eligibility, VRF/KES/certificate/signature validation, PBFT/Praos/TPraos/Peras voting or certificate checks, or hot-key rules that enables unauthorized block, vote, or certificate acceptance.
+- High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions.
+- High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes.
+- High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault.
+- Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS.
 
 ## Output (Strict)
 If valid analog exists, output:
@@ -341,7 +413,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict NEAR Omni Bridge validation prompt for security claims.
+    Generate a strict Ouroboros Consensus validation prompt for security claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -350,41 +422,42 @@ def validation_format(report: str) -> str:
 
 ## Rules
 - Validate only the submitted claim.
-- Check SECURITY.md and the HackenProof Near Intents Bridges program rules for scope, exclusions, and valid impact classes.
+- Check SECURITY.md and the Intersect POSM Bug Bounty rules for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- Reject admin-only, operator-only, trusted-maintainer, leaked-key, best-practice, docs/style, gas-only, denial-of-service, unbounded gas/storage, performance-only, griefing-only, front-running-only, static-analysis-only, dependency-only, and purely theoretical issues.
-- Reject if the exploit requires unrealistic assumptions, victim mistakes, missing external context, unsupported protocol behavior, Wormhole guardian compromise, NEAR validator collusion/reorg/finality failure, >= threshold colluding MPC nodes, unsupported local configuration, social engineering, public-mainnet testing, or physical/TEE hardware attacks.
-- A valid report must be triggerable by an unprivileged external user through public smart-contract calls, token callbacks, cross-chain transfer/init/finalize flows, metadata logging, token deployment/binding, relayer flows, prover/verifier input, or accepted cross-chain messages/events/proofs.
-- The final impact must match one of the Critical `target_scopes`, not just a generic code bug.
+- Reject admin-only, operator-only, trusted-maintainer, leaked-key, best-practice, docs/style, denial-of-service, resource-exhaustion, performance-only, griefing-only, static-analysis-only, dependency-only, and purely theoretical issues.
+- Reject if the exploit requires unrealistic assumptions, victim mistakes, missing external context, unsupported protocol behavior, trusted config/genesis manipulation, stake majority, VRF/KES key compromise, social engineering, public-mainnet testing, or physical attacks.
+- A valid report must be triggerable by an unprivileged peer/client or crafted production input through NodeToNode/NodeToClient protocols, ChainSync, BlockFetch, LocalTxSubmission, LocalStateQuery, object diffusion, block/header validation, mempool validation, DB replay/recovery, snapshot loading, or hard-fork transitions.
+- The final impact must match one of `target_scopes`, not just a generic code bug.
 - Prefer #NoVulnerability over speculative reports.
 
 ## Allowed Impact Scope
 Only these impacts are valid:
-- Critical. Stealing, loss, double-spending, unauthorized minting, or permanent freezing of bridged funds across NEAR, EVM, Solana, Starknet, Bitcoin, Zcash, or Wormhole-routed flows.
-- Critical. Unauthorized transaction, authorization bypass, role bypass, pause bypass, or signer/prover verification bypass that lets an attacker execute bridge, token, deployer, relayer, or admin-equivalent actions.
-- Critical. Balance manipulation, escrow mis-accounting, fee mis-accounting, decimal/normalization abuse, nonce/replay misuse, or token metadata binding confusion that changes user or protocol balances.
-- Critical. Cross-chain replay, message forgery, event/proof parsing flaw, light-client verification bypass, Wormhole VAA verification bypass, or chain/domain separation flaw enabling invalid finalization or double-spending.
-- Critical. Cryptographic or MPC-related flaw causing unauthorized access to signing capability, acceptance of invalid signatures/proofs, bypass of threshold-signature requirements, or sensitive MPC state disclosure.
+- Critical. Consensus safety failure that lets an unprivileged peer or crafted on-disk/network input make a node accept an invalid block, invalid header, invalid ledger state, double-spend, or irreversible divergent chain.
+- Critical. Bypass of leader eligibility, VRF/KES/certificate/signature validation, PBFT/Praos/TPraos/Peras voting or certificate checks, or hot-key rules that enables unauthorized block, vote, or certificate acceptance.
+- High. Chain selection, rollback, forecast, genesis, or header-state bug that lets an unprivileged peer make an honest node prefer a non-canonical or less-secure chain beyond the intended security assumptions.
+- High. Hard-fork, era transition, ledger-view, query, or network-version mismatch that breaks cross-era consensus or ledger invariants for production Cardano nodes.
+- High. ChainDB, ImmutableDB, VolatileDB, LedgerDB, snapshot, or LSM corruption/replay/rollback bug that causes durable use of the wrong ledger state or permanent acceptance/rejection of a valid chain without operator fault.
+- Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS.
 
 If the submitted claim does not concretely prove one of the allowed impacts above, it is invalid.
 
 ## Required Validation Checks
 All must pass:
 1. Exact in-scope file, function, and line/code references.
-2. Clear root cause and broken bridge/security/accounting assumption.
+2. Clear root cause and broken consensus, authorization, storage, hard-fork, or ledger/security invariant.
 3. Reachable exploit path: preconditions -> attacker action -> trigger -> bad result.
 4. Existing checks/guards reviewed and shown insufficient.
-5. Concrete impact that exactly matches one allowed NEAR Omni Bridge impact above, with realistic likelihood.
-6. Reproducible proof path: local unit/integration/fuzz/invariant test, private-testnet transaction sequence, contract call sequence, or justified model/differential test when localnet cannot demonstrate the impact.
-7. No obvious rejection reason from SECURITY.md, HackenProof rules, known audit findings, privileges, or scope exclusions.
+5. Concrete impact that exactly matches one allowed Ouroboros Consensus impact above, with realistic likelihood.
+6. Reproducible proof path: unit/integration/property/fuzz/state-machine/io-sim/model/differential test, local node cluster, or private-testnet sequence.
+7. No obvious rejection reason from SECURITY.md, Intersect POSM rules, known audit findings, privileges, or scope exclusions.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- Can a normal external user, token holder, custom relayer, relayer applicant, or cross-chain message/proof creator trigger this?
+- Can a normal peer/client, crafted block/header/transaction/object sender, or crafted DB/snapshot input in a local reproduction trigger this?
 - Does the code actually behave as claimed?
 - Is the impact caused by this repository, not by an external dependency alone?
-- Is the fund/authorization/accounting/proof/MPC impact concrete, not hypothetical?
+- Is the consensus/authorization/storage/hard-fork impact concrete, not hypothetical?
 - Would a responsible-disclosure triager accept the proof?
 - What exact test would prove it?
 
@@ -403,7 +476,7 @@ Audit Report
 [Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete allowed NEAR Omni Bridge impact and severity rationale]
+[Concrete allowed Ouroboros Consensus impact and severity rationale]
 
 ## Likelihood Explanation
 [Attacker capability, required conditions, feasibility, repeatability]
@@ -412,7 +485,7 @@ Audit Report
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or fuzz/invariant/model/private-testnet test plan]
+[Minimal reproducible steps or fuzz/invariant/model/io-sim/private-testnet test plan]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -420,4 +493,3 @@ If invalid, output exactly:
 Output only one of the two outcomes above. No extra text.
 """
     return prompt
-

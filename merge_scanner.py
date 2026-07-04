@@ -15,7 +15,7 @@ def merge_and_move_files():
         print("No files to move.")
         return
 
-    chunk_size = 25
+    chunk_size = 30
     file_chunks = [files[i:i + chunk_size] for i in range(0, len(files), chunk_size)]
 
     for chunk in file_chunks:

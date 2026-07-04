@@ -6,8 +6,8 @@ from questions import scope_files, target_scopes
 
 def generate_scope_files():
     """
-    Split all_questions.json into chunks of 25 questions and save them as separate files.
-    Each file will be named with a UUID and contain 25 questions.
+    Split all_questions.json into chunks of 30 questions and save them as separate files.
+    Each file will be named with a UUID and contain 30 questions.
     """
     # Get the question directory, default to 'question'
     scope_directory = os.environ.get('SCOPE_DIR', 'scope')
@@ -19,15 +19,15 @@ def generate_scope_files():
     try:
         # Load all questions
 
-        # Split into chunks of 25
-        chunk_size = 25
+        # Split into chunks of 30
+        chunk_size = 30
         total_questions = len(scope_files)
 
 
         for target_scope in target_scopes:
             for i in range(0, total_questions, chunk_size):
 
-                # Get a chunk of 25 questions
+                # Get a chunk of 30 questions
                 chunk = scope_files[i:i + chunk_size]
 
                 # Add target_scope mapping to each file in the chunk

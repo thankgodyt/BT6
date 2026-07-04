@@ -187,7 +187,7 @@ class GetQuestions:
             service=s)
         self.driver.implicitly_wait(50)
         self.collections_url = []
-        self.chunk_size = 25
+        self.chunk_size = 30
         self.pending_questions = []
         super(GetQuestions, self).__init__()
 

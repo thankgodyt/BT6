@@ -83,10 +83,10 @@ jobs:
         if: steps.check_audited.outputs.run_workflow == 'true'
         uses: nick-fields/retry@v3
         with:
-          max_attempts: 5
+          max_attempts: 2
           timeout_seconds: 60
           retry_on: 'error'
-          retry_wait_seconds: 300  # 5 minutes between retries
+          retry_wait_seconds: 800  # 5 minutes between retries
           command: |
             #!/bin/bash
             set -e
@@ -134,8 +134,42 @@ jobs:
           fi
 
 
+      - name: Check queued depth for this workflow
+        id: queue_guard
+        if: steps.check_questions.outputs.run_workflow == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          set -euo pipefail
+          
+          url="https://api.github.com/repos/${{ github.repository }}/actions/workflows/7_run_scanner.yml/runs?branch=main&event=workflow_dispatch&status=queued&per_page=1"
+          
+          resp="$(curl -fsSL \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "$url")"
+          
+          queued="$(echo "$resp" | python -c 'import sys,json; print(json.load(sys.stdin)["total_count"])')"
+          echo "queued=$queued" >> "$GITHUB_OUTPUT"
+          
+          if [ "$queued" -lt 2 ]; then
+            echo "can_dispatch=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "can_dispatch=false" >> "$GITHUB_OUTPUT"
+          fi
 
-
-
-     
-
+      - name: Trigger next batch after generate
+        if: steps.check_questions.outputs.run_workflow == 'true' && steps.queue_guard.outputs.can_dispatch == 'true'
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 2
+          timeout_seconds: 60
+          retry_on: 'error'
+          retry_wait_seconds: 300
+          command: |
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/7_run_scanner.yml/dispatches \
+              -d '{"ref":"main"}'
