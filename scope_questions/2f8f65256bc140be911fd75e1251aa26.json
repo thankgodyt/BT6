@@ -1,0 +1,7 @@
+[
+  {
+    "question": "'File Name: ouroboros-consensus-cardano/src/shelley/Ouroboros/Consensus/Shelley/ShelleyHFC.hs -> Scope: Medium. Public node API or miniprotocol flaw that exposes sensitive consensus state or materially weakens block, transaction, vote, certificate, or state-query authorization without relying on DoS'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bf9393fd-b952-4daf-8589-480c118ba5f8?mode=deep",
+    "questions_generated": false
+  }
+]
