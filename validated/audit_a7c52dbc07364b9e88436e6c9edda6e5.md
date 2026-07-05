@@ -1,0 +1,3 @@
+Looking at the vulnerability class from the external report — **insufficient parameter validation where an attacker-controlled input is used for all checks while a trusted authenticated field is ignored** — I need to find an analog in Ouroboros Consensus where an externally-supplied identifier is used for validation but a cryptographic proof embedded in the same structure is never verified.
+
+Let me examine the Peras vote validation path closely.
