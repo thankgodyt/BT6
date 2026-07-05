@@ -1,0 +1,1 @@
+Let me look at the `mkExtWFAStakeDistr` function and the `localSortitionNumSeats` function more carefully.
