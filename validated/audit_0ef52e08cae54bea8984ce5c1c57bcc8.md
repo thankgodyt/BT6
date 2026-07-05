@@ -1,0 +1,3 @@
+Looking at the vulnerability class — **an authorization/eligibility check enforced at one point (creation/initial validation) but absent at a later modification/update point, where the check is based on a mutable attribute** — I need to find an analog in Ouroboros Consensus where a cryptographic eligibility check is present at one stage but missing at another, allowing an unprivileged peer to bypass it.
+
+Let me examine the Peras vote and certificate validation paths.
