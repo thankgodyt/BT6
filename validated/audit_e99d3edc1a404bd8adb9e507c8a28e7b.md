@@ -1,0 +1,1 @@
+Looking at the external report's vulnerability class — a deduplication/replay-prevention mapping whose key includes unvalidated fields, allowing bypass — I need to find an analog in Ouroboros Consensus where a deduplication or acceptance check uses a key or validation path that omits semantically critical fields.
