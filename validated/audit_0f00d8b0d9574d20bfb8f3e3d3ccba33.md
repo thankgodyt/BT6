@@ -1,0 +1,1 @@
+I'll analyze the vulnerability class from the report (state/settings inconsistency after an authority transfer — one reference updated, dependent references left stale) and map it to Ouroboros Consensus components.
