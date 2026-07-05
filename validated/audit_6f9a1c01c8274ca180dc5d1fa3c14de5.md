@@ -1,0 +1,293 @@
+### Title
+`validatePerasCert` Unconditionally Returns Valid, Allowing Any Peer to Inject Arbitrary Peras Certificates and Manipulate Chain Selection — (`ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/SupportsPeras.hs`)
+
+---
+
+### Summary
+
+The production `validatePerasCert` implementation is a stub that unconditionally returns `Right` (valid) for every certificate it receives, performing no cryptographic or structural checks whatsoever. This is the direct analog of the external report's `verify()` silently accepting a zero signer: the verification function never rejects. Any unprivileged peer can craft a `PerasCert` for an arbitrary round and an arbitrary boosted block, have it accepted by the node's `processCerts` pipeline, stored in the `PerasCertDB`, and used to influence chain selection — potentially causing the node to prefer a non-canonical chain.
+
+---
+
+### Finding Description
+
+**Root cause — `validatePerasCert` is a no-op stub:**
+
+```haskell
+-- TODO: perform actual validation against all
+-- possible 'PerasValidationErr' variants
+-- see https://github.com/tweag/cardano-peras/issues/120
+validatePerasCert params cert =
+  Right
+    ValidatedPerasCert
+      { vpcCert = cert
+      , vpcCertBoost = perasWeight params
+      }
+``` [1](#0-0) 
+
+This is the catch-all instance for all block types:
+
+```haskell
+-- TODO: degenerate instance for all blks to get things to compile
+-- see https://github.com/tweag/cardano-peras/issues/73
+instance StandardHash blk => BlockSupportsPeras blk where
+``` [2](#0-1) 
+
+No more-specific override exists for production Cardano blocks, so this stub is the live implementation.
+
+**Production call path — peer-received certificates flow directly through this stub:**
+
+`processCerts` is the inbound handler for certificates received from peers over the network. It calls the `validateCert` argument, which is wired to `validatePerasCert mkPerasParams` in both production writers:
+
+```haskell
+makePerasCertPoolWriterFromCertDB systemTime perasCertDB =
+  ObjectPoolWriter
+    { ...
+    , opwAddObjects = \certs ->
+        processCerts
+          systemTime
+          (PerasCertDB.getCertIds perasCertDB)
+          (validatePerasCert mkPerasParams)   -- stub always returns Right
+          (void . join . atomically . PerasCertDB.addCert perasCertDB)
+          certs
+    ...
+    }
+``` [3](#0-2) 
+
+```haskell
+makePerasCertPoolWriterFromChainDB systemTime chainDB =
+  ObjectPoolWriter
+    { ...
+    , opwAddObjects = \certs ->
+        processCerts
+          systemTime
+          (ChainDB.getPerasCertIds chainDB)
+          (validatePerasCert mkPerasParams)   -- stub always returns Right
+          (void . ChainDB.addPerasCertAsync chainDB)
+          certs
+    ...
+    }
+``` [4](#0-3) 
+
+`processCerts` itself: if all certs pass `validateCert`, they are timestamped and stored; if any fail, the peer is disconnected. Because the stub never fails, every certificate from every peer is stored. [5](#0-4) 
+
+**Chain-selection consequence:**
+
+Once a certificate is in the `PerasCertDB`, `chainSelSync` uses it to boost the referenced block's weight during chain selection: [6](#0-5) 
+
+A certificate that boosts a block on a non-canonical fork can cause the node to switch to that fork.
+
+**Analog mapping to the external report:**
+
+| External report | This codebase |
+|---|---|
+| `verify()` returns `true` for any signature when signer is `address(0)` | `validatePerasCert` returns `Right` for any certificate unconditionally |
+| `tradeValid()` erroneously returns `true` | `processCerts` accepts and stores every peer-supplied certificate |
+| Attacker passes `address(0)` as maker | Attacker sends a crafted `PerasCert` with arbitrary round/boosted-block |
+
+---
+
+### Impact Explanation
+
+**High.** An unprivileged peer can send a crafted `PerasCert` naming any block hash as the boosted block. If the node has (or later receives) that block, chain selection will treat it as carrying Peras boost weight (`perasWeight params`). By combining a crafted certificate with a crafted or withheld block, an adversary can make an honest node prefer a non-canonical, less-secure chain over the canonical one — a direct chain-selection safety failure. No stake, no keys, and no prior relationship with the target node are required.
+
+---
+
+### Likelihood Explanation
+
+**High.** The attack requires only network connectivity to the target node. The ObjectDiffusion mini-protocol for Peras certificates is a standard peer-to-peer channel. The stub is the only implementation in the repository for all block types, and the two production pool writers both wire it in unconditionally.
+
+---
+
+### Recommendation
+
+1. Replace the `validatePerasCert` stub with a real implementation that:
+   - Verifies the aggregate BLS vote signature against the declared voter set and the committee's aggregate verification key.
+   - Confirms each declared voter is a legitimate committee member for the claimed election round.
+   - Checks the certificate's round number is within the acceptable window.
+2. Until the real implementation is ready, gate the `makePerasCertPoolWriterFromChainDB` / `makePerasCertPoolWriterFromCertDB` paths behind a feature flag so that the Peras certificate diffusion channel is not reachable from untrusted peers on any network where chain-selection integrity matters.
+3. Add a `blsIsInf` guard inside `verifyWithRole` (or at the call sites in `implVerifyCert`) to reject the BLS identity element as a public key, closing the secondary analog of the `address(0)` issue at the cryptographic layer.
+
+---
+
+### Proof of Concept
+
+```
+1. Connect to a target node that has the Peras ObjectDiffusion mini-protocol enabled.
+
+2. Craft a PerasCert:
+     pcCertRound    = <any round number not yet in the node's PerasCertDB>
+     pcCertBoostedBlock = <Point of a block on a non-canonical fork>
+
+3. Send the crafted PerasCert via the ObjectDiffusion peer protocol.
+
+4. processCerts calls validatePerasCert, which returns Right unconditionally.
+
+5. The certificate is stored in PerasCertDB with the full perasWeight boost.
+
+6. Send (or wait for the node to receive) the non-canonical block referenced
+   by pcCertBoostedBlock.
+
+7. chainSelSync triggers chain selection for the boosted block.
+   The non-canonical fork now carries Peras boost weight and may become
+   the node's selected chain, diverging from the canonical chain.
+```
+
+### Citations
+
+**File:** ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/SupportsPeras.hs (L319-321)
+```haskell
+-- see https://github.com/tweag/cardano-peras/issues/73
+instance StandardHash blk => BlockSupportsPeras blk where
+  type PerasCfg blk = PerasParams
+```
+
+**File:** ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Block/SupportsPeras.hs (L350-358)
+```haskell
+  -- TODO: perform actual validation against all
+  -- possible 'PerasValidationErr' variants
+  -- see https://github.com/tweag/cardano-peras/issues/120
+  validatePerasCert params cert =
+    Right
+      ValidatedPerasCert
+        { vpcCert = cert
+        , vpcCertBoost = perasWeight params
+        }
+```
+
+**File:** ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/ObjectPool/PerasCert.hs (L96-109)
+```haskell
+makePerasCertPoolWriterFromCertDB systemTime perasCertDB =
+  ObjectPoolWriter
+    { opwObjectId = getPerasCertRound
+    , opwAddObjects = \certs ->
+        processCerts
+          systemTime
+          (PerasCertDB.getCertIds perasCertDB)
+          (validatePerasCert mkPerasParams) -- TODO replace when actual plumbing is in place
+          (void . join . atomically . PerasCertDB.addCert perasCertDB)
+          certs
+    , opwHasObject = do
+        certIds <- PerasCertDB.getCertIds perasCertDB
+        pure $ \roundNo -> Set.member roundNo certIds
+    }
+```
+
+**File:** ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/ObjectPool/PerasCert.hs (L113-137)
+```haskell
+makePerasCertPoolWriterFromChainDB ::
+  (StandardHash blk, IOLike m) =>
+  SystemTime m ->
+  ChainDB m blk ->
+  ObjectPoolWriter PerasRoundNo (PerasCert blk) m
+makePerasCertPoolWriterFromChainDB systemTime chainDB =
+  ObjectPoolWriter
+    { opwObjectId = getPerasCertRound
+    , opwAddObjects = \certs ->
+        processCerts
+          systemTime
+          (ChainDB.getPerasCertIds chainDB)
+          -- TODO replace when actual plumbing is in place
+          (validatePerasCert mkPerasParams)
+          -- We do not want to block the writer thread on waiting for ChainSel
+          -- side-effects to complete, so we use the async version of adding
+          -- certs to the ChainDB and ignore the returned promise.
+          -- The async action is still launched and executed behind the scenes
+          -- even though we drop the promise.
+          (void . ChainDB.addPerasCertAsync chainDB)
+          certs
+    , opwHasObject = do
+        certIds <- ChainDB.getPerasCertIds chainDB
+        pure $ \roundNo -> Set.member roundNo certIds
+    }
+```
+
+**File:** ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/MiniProtocol/ObjectDiffusion/ObjectPool/PerasCert.hs (L156-185)
+```haskell
+processCerts ::
+  MonadSTM m =>
+  SystemTime m ->
+  STM m (Set PerasRoundNo) ->
+  (PerasCert blk -> Either (PerasValidationErr blk) (ValidatedPerasCert blk)) ->
+  (WithArrivalTime (ValidatedPerasCert blk) -> m ()) ->
+  [PerasCert blk] ->
+  m ()
+processCerts systemTime alreadyInDbSTM validateCert addCert certs = do
+  alreadyInDb <- atomically alreadyInDbSTM
+  let certsNotAlreadyInDb = filter (not . (`Set.member` alreadyInDb) . getPerasCertRound) certs
+  now <- systemTimeCurrent systemTime
+  case partitionEithers (validateCert <$> certsNotAlreadyInDb) of
+    -- All certs are valid => add them to the pool
+    ([], validatedCerts) ->
+      mapM_
+        (addCert . WithArrivalTime now)
+        validatedCerts
+    -- Some certs are invalid => reject the whole batch
+    --
+    -- N.B. it has been requested in PR review
+    -- https://github.com/IntersectMBO/ouroboros-consensus/pull/1768#discussion_r2747873186
+    -- to gather all validation errors and report them together in the exception
+    -- rather than just report the first error encountered.
+    -- This assumes that cert validation is cheap, which may not be true in
+    -- practice depending on the actual crypto/committee selection scheme.
+    -- Hence we may revisit this to lazily abort validation upon the first error
+    -- encountered.
+    (errs, _) ->
+      throw (PerasCertValidationError errs)
+```
+
+**File:** ouroboros-consensus/src/ouroboros-consensus/Ouroboros/Consensus/Storage/ChainDB/Impl/ChainSel.hs (L481-532)
+```haskell
+-- Process a Peras certificate by adding it to the PerasCertDB and potentially
+-- performing chain selection if a candidate is now better than our selection.
+chainSelSync cdb@CDB{..} (ChainSelAddPerasCert cert varProcessed) = do
+  curChain <- lift $ atomically $ Query.getCurrentChain cdb
+  let immTip = AF.castAnchor $ AF.anchor curChain
+
+  certResult <- withEarlyExitId $ do
+    -- Ignore the certificate if it boosts a block that is so old that it can't
+    -- influence our selection.
+    when (pointSlot boostedBlock < AF.anchorToSlotNo immTip) $ do
+      lift $ lift $ traceWith tracer $ IgnorePerasCertTooOld certRound boostedBlock immTip
+      idExitEarly PerasCertIgnoredTooOld
+
+    -- Add the certificate to the PerasCertDB.
+    certRes <- lift $ lift $ join $ atomically $ PerasCertDB.addCert cdbPerasCertDB cert
+    -- Here:
+    -- \* if the certificate is already in the PerasCertDB, we exit early with that result
+    -- \* if the certificate is newly added to the PerasCertDB, we bind  the result value that we will return in any of the branches below
+    addedCertRes <-
+      case certRes of
+        PerasCertDB.PerasCertAlreadyInDB -> idExitEarly $ PerasCertProcessed PerasCertDB.PerasCertAlreadyInDB
+        PerasCertDB.AddedPerasCertToDB -> pure $ PerasCertProcessed PerasCertDB.AddedPerasCertToDB
+
+    -- If the certificate boosts a block on our current chain (including the
+    -- anchor), then it just makes our selection even stronger.
+    when (AF.withinFragmentBounds (castPoint boostedBlock) curChain) $ do
+      lift $ lift $ traceWith tracer $ PerasCertBoostsCurrentChain certRound boostedBlock
+      idExitEarly $ addedCertRes
+
+    boostedHash <- case pointHash boostedBlock of
+      -- If the certificate boosts the Genesis point, then it can not influence
+      -- chain selection as all chains contain it.
+      GenesisHash -> do
+        lift $ lift $ traceWith tracer $ PerasCertBoostsGenesis certRound
+        idExitEarly $ addedCertRes
+      -- Otherwise, the certificate boosts a block potentially on a (future)
+      -- candidate.
+      BlockHash boostedHash -> pure boostedHash
+    boostedHdr <-
+      lift (lift $ VolatileDB.getBlockComponent cdbVolatileDB GetHeader boostedHash) >>= \case
+        -- If we have not (yet) received the boosted block, we don't need to do
+        -- anything further for now regarding chain selection. Once we receive
+        -- it, the additional weight of the certificate is taken into account.
+        Nothing -> do
+          lift $ lift $ traceWith tracer $ PerasCertBoostsBlockNotYetReceived certRound boostedBlock
+          idExitEarly $ addedCertRes
+        Just boostedHdr -> pure boostedHdr
+
+    -- Trigger chain selection for the boosted block.
+    lift $ lift $ traceWith tracer $ ChainSelectionForBoostedBlock certRound boostedBlock
+    lift $ chainSelectionForBlock cdb BlockCache.empty boostedHdr noPunishment
+    pure $ addedCertRes
+```
