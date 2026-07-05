@@ -1,0 +1,1 @@
+Let me look at the extended ledger state to understand how header and block validation are combined in chain selection.
