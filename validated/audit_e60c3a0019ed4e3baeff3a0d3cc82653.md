@@ -1,0 +1,1 @@
+Let me look at the `forksAtMostKWeight` function and the `takeVolatileSuffix` usage in chain selection to understand the rollback boundary calculation.
