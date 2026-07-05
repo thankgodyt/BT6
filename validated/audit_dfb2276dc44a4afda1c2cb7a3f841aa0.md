@@ -1,0 +1,3 @@
+Looking at the external report's vulnerability class — **authorization/access control bypass where a validation check uses attacker-controlled inputs and always passes** — I need to find an analog in Ouroboros Consensus where a function that should restrict which peer-supplied objects are accepted instead unconditionally accepts them, leading to consensus state manipulation.
+
+Let me trace the Peras certificate ingest path carefully.
