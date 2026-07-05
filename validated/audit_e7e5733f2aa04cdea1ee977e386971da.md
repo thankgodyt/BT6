@@ -1,0 +1,1 @@
+Let me look at the garbage collection logic in `PerasCertDB` and how `pcdsLatestCertSeen` is handled.
