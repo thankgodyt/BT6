@@ -1,0 +1,1 @@
+Let me look at the `initialChainSelection` function and the LedgerDB `validateFork` to understand the full picture.
