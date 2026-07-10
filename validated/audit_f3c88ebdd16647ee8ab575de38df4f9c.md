@@ -1,1 +1,0 @@
-Let me look at the Query module and how the weight snapshot is used in chain selection to complete my analysis.

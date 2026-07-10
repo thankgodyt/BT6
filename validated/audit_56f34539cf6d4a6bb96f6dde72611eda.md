@@ -1,1 +1,0 @@
-Looking at the vulnerability class — **first-match-wins conditional logic with duplicate identifiers blocking a legitimate party from completing their action** — I need to find an analog in Ouroboros Consensus where an unprivileged peer can exploit duplicate identifier handling to suppress or hijack a legitimate party's state update.

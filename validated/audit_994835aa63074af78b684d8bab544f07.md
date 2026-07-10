@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class — **a missing handler/implementation in a call flow that causes a legitimate operation to fail or an illegitimate one to succeed** — I need to find an analog in the Ouroboros Consensus codebase where a component in a call flow lacks the necessary implementation, with security-relevant consequences.
-
-Let me trace the Peras certificate and vote diffusion call flows carefully.

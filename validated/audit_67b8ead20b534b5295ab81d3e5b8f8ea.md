@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class — **crafted external input causes automatic state injection that bypasses checks, persists in the system, and corrupts subsequent operations** — I need to find an analog in Ouroboros Consensus where an unprivileged peer can inject persistent state that bypasses validation and affects chain selection or ledger operations.
-
-Let me investigate the Peras certificate/vote validation path, which is a new attack surface.

@@ -1,1 +1,0 @@
-I'll analyze the vulnerability class from the report (state-check bypass where an "unregistered" state is incorrectly detected, allowing a protection to be circumvented) and search for analogous patterns in the Ouroboros Consensus codebase.

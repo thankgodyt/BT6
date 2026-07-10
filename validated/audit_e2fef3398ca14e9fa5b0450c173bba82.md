@@ -1,1 +1,0 @@
-Let me look at the cert pool writer and how `validatePerasCert` is wired in.

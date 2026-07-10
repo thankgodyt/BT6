@@ -1,1 +1,0 @@
-Let me look more carefully at the HFC state extension and the `extendToSlot` function, which is the most likely analog.

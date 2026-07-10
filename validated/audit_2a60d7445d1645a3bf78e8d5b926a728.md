@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class — **insufficient access control on a state-modifying function that allows unauthorized modification of shared state, causing validation to fail for legitimate operations** — I need to find an analog in Ouroboros Consensus where an unprivileged peer can modify shared consensus state without proper authorization, affecting chain selection or block/certificate validation.
-
-Let me trace the Peras certificate validation path carefully.

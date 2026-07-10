@@ -1,3 +1,0 @@
-Let me analyze the vulnerability class from the report and search for analogous issues in the Ouroboros Consensus codebase.
-
-The report describes an **accounting/state tracking error**: a shared capacity variable is decremented by the actual (post-loss) value instead of the original (pre-loss) value, causing subsequent operations to use an inflated remaining balance. I'll look for analogous patterns in consensus state tracking, chain selection, and ledger accounting.

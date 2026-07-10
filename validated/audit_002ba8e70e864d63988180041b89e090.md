@@ -1,1 +1,0 @@
-Let me look more carefully at the `addToPerasWeightSnapshot` function and the `sharedCandidatePrefix` / `stripCommonPrefix` interaction to verify my analysis.

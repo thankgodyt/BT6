@@ -1,1 +1,0 @@
-Looking at the external report's vulnerability class — **missing validation allowing unauthorized items into a trusted list, combined with state manipulation that bypasses health checks** — I need to find an analog in Ouroboros Consensus where an unprivileged peer can inject objects into a trusted structure without proper cryptographic verification, affecting consensus state.

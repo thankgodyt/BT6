@@ -1,1 +1,0 @@
-Let me look at the WFALS.hs file and the committee verification logic more carefully.

@@ -1,1 +1,0 @@
-Looking at the codebase, I need to find an analog to the vulnerability class: **a function reference passed to a higher-order function that fails to perform its intended operation due to missing/wrong context**, causing incorrect runtime behavior in a security-critical path.
