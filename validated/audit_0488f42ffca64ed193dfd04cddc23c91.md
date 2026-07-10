@@ -1,0 +1,1 @@
+Let me look at the nbtc module in the satoshi-bridge and the withdraw flow more carefully.
