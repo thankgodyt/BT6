@@ -1,1 +1,0 @@
-Based on what I've read so far, I need to check the `ft_on_transfer` implementation in the bridge to determine if the caller identity is validated — the direct analog to URI scheme hijacking.

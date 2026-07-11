@@ -1,1 +1,0 @@
-Let me look at the `withdraw_protocol_fee` API function and the ft_on_transfer flow to understand the full accounting picture.

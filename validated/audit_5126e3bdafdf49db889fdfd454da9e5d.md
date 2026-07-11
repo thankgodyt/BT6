@@ -1,1 +1,0 @@
-Let me look at the deposit verification flow and how mint amounts are computed.

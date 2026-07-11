@@ -1,1 +1,0 @@
-Now let me look at the nBTC contract's burn implementation to understand the exact token flow:
